@@ -1,0 +1,62 @@
+[
+  {
+    "fdc_id": 2758998,
+    "expected_description": "Pasta, dry, enriched, spaghetti",
+    "name_es": "Espaguetis enriquecidos, secos",
+    "state": "dry",
+    "allergens": [
+      "wheat",
+      "gluten"
+    ],
+    "allergen_review_complete": false,
+    "is_compound": true,
+    "vegan": null,
+    "vegetarian": null,
+    "notes": "Selección y traducción editorial MILO. Peso de porción comestible. Producto compuesto: revisar etiqueta; alérgenos adicionales pendientes."
+  },
+  {
+    "fdc_id": 2759000,
+    "expected_description": "Pasta, dry, whole grain, spaghetti ",
+    "name_es": "Espaguetis integrales, secos",
+    "state": "dry",
+    "allergens": [
+      "wheat",
+      "gluten"
+    ],
+    "allergen_review_complete": false,
+    "is_compound": true,
+    "vegan": null,
+    "vegetarian": null,
+    "notes": "Selección y traducción editorial MILO. Peso de porción comestible. Producto compuesto: revisar etiqueta; alérgenos adicionales pendientes."
+  },
+  {
+    "fdc_id": 2758994,
+    "expected_description": "Bread, 100% whole wheat, commercial",
+    "name_es": "Pan comercial 100% integral de trigo",
+    "state": "ready_to_eat",
+    "allergens": [
+      "wheat",
+      "gluten"
+    ],
+    "allergen_review_complete": false,
+    "is_compound": true,
+    "vegan": null,
+    "vegetarian": null,
+    "notes": "Selección y traducción editorial MILO. Peso de porción comestible. Producto compuesto: revisar etiqueta; alérgenos adicionales pendientes."
+  },
+  {
+    "fdc_id": 2758996,
+    "expected_description": "Tortilla, wheat flour, shelf stable",
+    "name_es": "Tortilla comercial de harina de trigo",
+    "state": "ready_to_eat",
+    "allergens": [
+      "wheat",
+      "gluten"
+    ],
+    "allergen_review_complete": false,
+    "is_compound": true,
+    "vegan": null,
+    "vegetarian": null,
+    "notes": "Selección y traducción editorial MILO. Peso de porción comestible. Producto compuesto: revisar etiqueta; alérgenos adicionales pendientes."
+  }
+]

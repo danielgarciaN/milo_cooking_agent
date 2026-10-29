@@ -1,0 +1,29 @@
+{
+  "material_files": {
+    "CHECKLIST_FASE1.md": {
+      "preserved_at": "docs/materials/CHECKLIST_FASE1_ORIGINAL.md",
+      "unchanged": true
+    },
+    "docs/INSTRUCCIONES.md": {
+      "preserved_at": "docs/INSTRUCCIONES.md",
+      "unchanged": true
+    },
+    "data/sources.json": {
+      "preserved_at": "docs/materials/sources_ORIGINAL.json",
+      "unchanged": true
+    },
+    "data/structured/substitutions_DRAFT.json": {
+      "preserved_at": "data/structured/substitutions_DRAFT.json",
+      "unchanged": true
+    },
+    "data/structured/recipes_DRAFT.json": {
+      "preserved_at": "data/structured/recipes_DRAFT.json",
+      "unchanged": true
+    },
+    "data/structured/foods_TEMPLATE.csv": {
+      "preserved_at": "data/structured/foods_TEMPLATE.csv",
+      "unchanged": true
+    }
+  },
+  "provided_usda_zip_matches_download": true
+}

@@ -1,0 +1,562 @@
+[
+  {
+    "recipe_id": "r001",
+    "title": "Bowl de pollo y arroz",
+    "category": "comida",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "pollo pechuga",
+        "grams": 160,
+        "food_id": null,
+        "state": "verify_with_catalog"
+      },
+      {
+        "ingredient_name": "arroz",
+        "grams": 80,
+        "food_id": null,
+        "state": "verify_with_catalog"
+      },
+      {
+        "ingredient_name": "tomate",
+        "grams": 120,
+        "food_id": null,
+        "state": "verify_with_catalog"
+      },
+      {
+        "ingredient_name": "aceite de oliva",
+        "grams": 10,
+        "food_id": null,
+        "state": "verify_with_catalog"
+      }
+    ],
+    "steps": [
+      "Preparar y pesar los ingredientes.",
+      "Cocinar los ingredientes que lo requieran con una técnica adecuada a la receta.",
+      "Combinar, servir y verificar cocción segura."
+    ],
+    "time_minutes_estimate": 20,
+    "tags": [
+      "high_protein",
+      "meal_prep"
+    ],
+    "kcal": null,
+    "protein_g": null,
+    "carbs_g": null,
+    "fat_g": null,
+    "allergens": "pending_validation",
+    "review_status": "draft_not_verified",
+    "notes": "Borrador de catálogo: redactar pasos específicos, verificar técnicas, alérgenos y vincular FDC IDs antes de usar para recomendar."
+  },
+  {
+    "recipe_id": "r002",
+    "title": "Tortilla de espinacas",
+    "category": "cena",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "huevo entero",
+        "grams": 120,
+        "food_id": null,
+        "state": "verify_with_catalog"
+      },
+      {
+        "ingredient_name": "espinacas",
+        "grams": 80,
+        "food_id": null,
+        "state": "verify_with_catalog"
+      },
+      {
+        "ingredient_name": "aceite de oliva",
+        "grams": 8,
+        "food_id": null,
+        "state": "verify_with_catalog"
+      }
+    ],
+    "steps": [
+      "Preparar y pesar los ingredientes.",
+      "Cocinar los ingredientes que lo requieran con una técnica adecuada a la receta.",
+      "Combinar, servir y verificar cocción segura."
+    ],
+    "time_minutes_estimate": 15,
+    "tags": [
+      "vegetarian",
+      "quick"
+    ],
+    "kcal": null,
+    "protein_g": null,
+    "carbs_g": null,
+    "fat_g": null,
+    "allergens": "pending_validation",
+    "review_status": "draft_not_verified",
+    "notes": "Borrador de catálogo: redactar pasos específicos, verificar técnicas, alérgenos y vincular FDC IDs antes de usar para recomendar."
+  },
+  {
+    "recipe_id": "r003",
+    "title": "Avena con yogur y plátano",
+    "category": "desayuno",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "avena",
+        "grams": 65,
+        "food_id": null,
+        "state": "verify_with_catalog"
+      },
+      {
+        "ingredient_name": "yogur natural",
+        "grams": 180,
+        "food_id": null,
+        "state": "verify_with_catalog"
+      },
+      {
+        "ingredient_name": "plátano",
+        "grams": 120,
+        "food_id": null,
+        "state": "verify_with_catalog"
+      }
+    ],
+    "steps": [
+      "Preparar y pesar los ingredientes.",
+      "Cocinar los ingredientes que lo requieran con una técnica adecuada a la receta.",
+      "Combinar, servir y verificar cocción segura."
+    ],
+    "time_minutes_estimate": 5,
+    "tags": [
+      "vegetarian",
+      "quick"
+    ],
+    "kcal": null,
+    "protein_g": null,
+    "carbs_g": null,
+    "fat_g": null,
+    "allergens": "pending_validation",
+    "review_status": "draft_not_verified",
+    "notes": "Borrador de catálogo: redactar pasos específicos, verificar técnicas, alérgenos y vincular FDC IDs antes de usar para recomendar."
+  },
+  {
+    "recipe_id": "r004",
+    "title": "Pasta con atún y tomate",
+    "category": "comida",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "pasta seca",
+        "grams": 90,
+        "food_id": null,
+        "state": "verify_with_catalog"
+      },
+      {
+        "ingredient_name": "atún al natural escurrido",
+        "grams": 120,
+        "food_id": null,
+        "state": "verify_with_catalog"
+      },
+      {
+        "ingredient_name": "tomate triturado",
+        "grams": 150,
+        "food_id": null,
+        "state": "verify_with_catalog"
+      },
+      {
+        "ingredient_name": "aceite de oliva",
+        "grams": 8,
+        "food_id": null,
+        "state": "verify_with_catalog"
+      }
+    ],
+    "steps": [
+      "Preparar y pesar los ingredientes.",
+      "Cocinar los ingredientes que lo requieran con una técnica adecuada a la receta.",
+      "Combinar, servir y verificar cocción segura."
+    ],
+    "time_minutes_estimate": 20,
+    "tags": [
+      "high_protein"
+    ],
+    "kcal": null,
+    "protein_g": null,
+    "carbs_g": null,
+    "fat_g": null,
+    "allergens": "pending_validation",
+    "review_status": "draft_not_verified",
+    "notes": "Borrador de catálogo: redactar pasos específicos, verificar técnicas, alérgenos y vincular FDC IDs antes de usar para recomendar."
+  },
+  {
+    "recipe_id": "r005",
+    "title": "Ensalada de garbanzos",
+    "category": "comida",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "garbanzo cocido escurrido",
+        "grams": 200,
+        "food_id": null,
+        "state": "verify_with_catalog"
+      },
+      {
+        "ingredient_name": "pepino",
+        "grams": 100,
+        "food_id": null,
+        "state": "verify_with_catalog"
+      },
+      {
+        "ingredient_name": "tomate",
+        "grams": 100,
+        "food_id": null,
+        "state": "verify_with_catalog"
+      },
+      {
+        "ingredient_name": "aceite de oliva",
+        "grams": 12,
+        "food_id": null,
+        "state": "verify_with_catalog"
+      }
+    ],
+    "steps": [
+      "Preparar y pesar los ingredientes.",
+      "Cocinar los ingredientes que lo requieran con una técnica adecuada a la receta.",
+      "Combinar, servir y verificar cocción segura."
+    ],
+    "time_minutes_estimate": 10,
+    "tags": [
+      "vegan",
+      "quick"
+    ],
+    "kcal": null,
+    "protein_g": null,
+    "carbs_g": null,
+    "fat_g": null,
+    "allergens": "pending_validation",
+    "review_status": "draft_not_verified",
+    "notes": "Borrador de catálogo: redactar pasos específicos, verificar técnicas, alérgenos y vincular FDC IDs antes de usar para recomendar."
+  },
+  {
+    "recipe_id": "r006",
+    "title": "Salmón al horno con patata",
+    "category": "cena",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "salmón",
+        "grams": 160,
+        "food_id": null,
+        "state": "verify_with_catalog"
+      },
+      {
+        "ingredient_name": "patata",
+        "grams": 220,
+        "food_id": null,
+        "state": "verify_with_catalog"
+      },
+      {
+        "ingredient_name": "brócoli",
+        "grams": 150,
+        "food_id": null,
+        "state": "verify_with_catalog"
+      },
+      {
+        "ingredient_name": "aceite de oliva",
+        "grams": 8,
+        "food_id": null,
+        "state": "verify_with_catalog"
+      }
+    ],
+    "steps": [
+      "Preparar y pesar los ingredientes.",
+      "Cocinar los ingredientes que lo requieran con una técnica adecuada a la receta.",
+      "Combinar, servir y verificar cocción segura."
+    ],
+    "time_minutes_estimate": 35,
+    "tags": [
+      "meal_prep"
+    ],
+    "kcal": null,
+    "protein_g": null,
+    "carbs_g": null,
+    "fat_g": null,
+    "allergens": "pending_validation",
+    "review_status": "draft_not_verified",
+    "notes": "Borrador de catálogo: redactar pasos específicos, verificar técnicas, alérgenos y vincular FDC IDs antes de usar para recomendar."
+  },
+  {
+    "recipe_id": "r007",
+    "title": "Tostadas de aguacate y huevo",
+    "category": "desayuno",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "pan integral",
+        "grams": 90,
+        "food_id": null,
+        "state": "verify_with_catalog"
+      },
+      {
+        "ingredient_name": "aguacate",
+        "grams": 80,
+        "food_id": null,
+        "state": "verify_with_catalog"
+      },
+      {
+        "ingredient_name": "huevo entero",
+        "grams": 120,
+        "food_id": null,
+        "state": "verify_with_catalog"
+      }
+    ],
+    "steps": [
+      "Preparar y pesar los ingredientes.",
+      "Cocinar los ingredientes que lo requieran con una técnica adecuada a la receta.",
+      "Combinar, servir y verificar cocción segura."
+    ],
+    "time_minutes_estimate": 15,
+    "tags": [
+      "vegetarian"
+    ],
+    "kcal": null,
+    "protein_g": null,
+    "carbs_g": null,
+    "fat_g": null,
+    "allergens": "pending_validation",
+    "review_status": "draft_not_verified",
+    "notes": "Borrador de catálogo: redactar pasos específicos, verificar técnicas, alérgenos y vincular FDC IDs antes de usar para recomendar."
+  },
+  {
+    "recipe_id": "r008",
+    "title": "Lentejas con verduras",
+    "category": "comida",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "lentejas cocidas",
+        "grams": 250,
+        "food_id": null,
+        "state": "verify_with_catalog"
+      },
+      {
+        "ingredient_name": "zanahoria",
+        "grams": 90,
+        "food_id": null,
+        "state": "verify_with_catalog"
+      },
+      {
+        "ingredient_name": "cebolla",
+        "grams": 80,
+        "food_id": null,
+        "state": "verify_with_catalog"
+      },
+      {
+        "ingredient_name": "aceite de oliva",
+        "grams": 10,
+        "food_id": null,
+        "state": "verify_with_catalog"
+      }
+    ],
+    "steps": [
+      "Preparar y pesar los ingredientes.",
+      "Cocinar los ingredientes que lo requieran con una técnica adecuada a la receta.",
+      "Combinar, servir y verificar cocción segura."
+    ],
+    "time_minutes_estimate": 30,
+    "tags": [
+      "vegan",
+      "budget"
+    ],
+    "kcal": null,
+    "protein_g": null,
+    "carbs_g": null,
+    "fat_g": null,
+    "allergens": "pending_validation",
+    "review_status": "draft_not_verified",
+    "notes": "Borrador de catálogo: redactar pasos específicos, verificar técnicas, alérgenos y vincular FDC IDs antes de usar para recomendar."
+  },
+  {
+    "recipe_id": "r009",
+    "title": "Wrap de pavo",
+    "category": "cena",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "tortilla de trigo",
+        "grams": 80,
+        "food_id": null,
+        "state": "verify_with_catalog"
+      },
+      {
+        "ingredient_name": "pavo cocinado",
+        "grams": 140,
+        "food_id": null,
+        "state": "verify_with_catalog"
+      },
+      {
+        "ingredient_name": "lechuga",
+        "grams": 50,
+        "food_id": null,
+        "state": "verify_with_catalog"
+      },
+      {
+        "ingredient_name": "tomate",
+        "grams": 70,
+        "food_id": null,
+        "state": "verify_with_catalog"
+      }
+    ],
+    "steps": [
+      "Preparar y pesar los ingredientes.",
+      "Cocinar los ingredientes que lo requieran con una técnica adecuada a la receta.",
+      "Combinar, servir y verificar cocción segura."
+    ],
+    "time_minutes_estimate": 10,
+    "tags": [
+      "quick",
+      "high_protein"
+    ],
+    "kcal": null,
+    "protein_g": null,
+    "carbs_g": null,
+    "fat_g": null,
+    "allergens": "pending_validation",
+    "review_status": "draft_not_verified",
+    "notes": "Borrador de catálogo: redactar pasos específicos, verificar técnicas, alérgenos y vincular FDC IDs antes de usar para recomendar."
+  },
+  {
+    "recipe_id": "r010",
+    "title": "Revuelto de champiñones",
+    "category": "cena",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "huevo entero",
+        "grams": 120,
+        "food_id": null,
+        "state": "verify_with_catalog"
+      },
+      {
+        "ingredient_name": "champiñones",
+        "grams": 180,
+        "food_id": null,
+        "state": "verify_with_catalog"
+      },
+      {
+        "ingredient_name": "aceite de oliva",
+        "grams": 8,
+        "food_id": null,
+        "state": "verify_with_catalog"
+      }
+    ],
+    "steps": [
+      "Preparar y pesar los ingredientes.",
+      "Cocinar los ingredientes que lo requieran con una técnica adecuada a la receta.",
+      "Combinar, servir y verificar cocción segura."
+    ],
+    "time_minutes_estimate": 12,
+    "tags": [
+      "vegetarian",
+      "quick"
+    ],
+    "kcal": null,
+    "protein_g": null,
+    "carbs_g": null,
+    "fat_g": null,
+    "allergens": "pending_validation",
+    "review_status": "draft_not_verified",
+    "notes": "Borrador de catálogo: redactar pasos específicos, verificar técnicas, alérgenos y vincular FDC IDs antes de usar para recomendar."
+  },
+  {
+    "recipe_id": "r011",
+    "title": "Arroz con tofu y verduras",
+    "category": "comida",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "arroz",
+        "grams": 80,
+        "food_id": null,
+        "state": "verify_with_catalog"
+      },
+      {
+        "ingredient_name": "tofu firme",
+        "grams": 180,
+        "food_id": null,
+        "state": "verify_with_catalog"
+      },
+      {
+        "ingredient_name": "calabacín",
+        "grams": 120,
+        "food_id": null,
+        "state": "verify_with_catalog"
+      },
+      {
+        "ingredient_name": "zanahoria",
+        "grams": 80,
+        "food_id": null,
+        "state": "verify_with_catalog"
+      },
+      {
+        "ingredient_name": "aceite de oliva",
+        "grams": 8,
+        "food_id": null,
+        "state": "verify_with_catalog"
+      }
+    ],
+    "steps": [
+      "Preparar y pesar los ingredientes.",
+      "Cocinar los ingredientes que lo requieran con una técnica adecuada a la receta.",
+      "Combinar, servir y verificar cocción segura."
+    ],
+    "time_minutes_estimate": 25,
+    "tags": [
+      "vegan"
+    ],
+    "kcal": null,
+    "protein_g": null,
+    "carbs_g": null,
+    "fat_g": null,
+    "allergens": "pending_validation",
+    "review_status": "draft_not_verified",
+    "notes": "Borrador de catálogo: redactar pasos específicos, verificar técnicas, alérgenos y vincular FDC IDs antes de usar para recomendar."
+  },
+  {
+    "recipe_id": "r012",
+    "title": "Yogur con frutos rojos y nueces",
+    "category": "snack",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "yogur natural",
+        "grams": 200,
+        "food_id": null,
+        "state": "verify_with_catalog"
+      },
+      {
+        "ingredient_name": "frutos rojos",
+        "grams": 100,
+        "food_id": null,
+        "state": "verify_with_catalog"
+      },
+      {
+        "ingredient_name": "nueces",
+        "grams": 25,
+        "food_id": null,
+        "state": "verify_with_catalog"
+      }
+    ],
+    "steps": [
+      "Preparar y pesar los ingredientes.",
+      "Cocinar los ingredientes que lo requieran con una técnica adecuada a la receta.",
+      "Combinar, servir y verificar cocción segura."
+    ],
+    "time_minutes_estimate": 5,
+    "tags": [
+      "vegetarian",
+      "quick"
+    ],
+    "kcal": null,
+    "protein_g": null,
+    "carbs_g": null,
+    "fat_g": null,
+    "allergens": "pending_validation",
+    "review_status": "draft_not_verified",
+    "notes": "Borrador de catálogo: redactar pasos específicos, verificar técnicas, alérgenos y vincular FDC IDs antes de usar para recomendar."
+  }
+]

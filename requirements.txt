@@ -1,0 +1,2 @@
+# Núcleo y herramientas de verificación. RAG opcional: pip install -e ".[rag]"
+-e .[dev]

@@ -1,0 +1,64 @@
+[
+  {
+    "fdc_id": 171413,
+    "expected_description": "Oil, olive, salad or cooking",
+    "name_es": "Aceite de oliva para ensalada o cocina (genérico USDA SR)",
+    "state": "ready_to_eat",
+    "allergens": [],
+    "allergen_review_complete": true,
+    "is_compound": false,
+    "vegan": true,
+    "vegetarian": true,
+    "notes": "Registro suplementario USDA SR Legacy 2018, no Foundation 2026. Alérgenos inherentes; trazas no evaluadas."
+  },
+  {
+    "fdc_id": 171025,
+    "expected_description": "Oil, sunflower, linoleic, (approx. 65%)",
+    "name_es": "Aceite de girasol linoleico, aproximadamente 65%",
+    "state": "ready_to_eat",
+    "allergens": [],
+    "allergen_review_complete": true,
+    "is_compound": false,
+    "vegan": true,
+    "vegetarian": true,
+    "notes": "Registro suplementario USDA SR Legacy 2018, no Foundation 2026. Alérgenos inherentes; trazas no evaluadas."
+  },
+  {
+    "fdc_id": 172421,
+    "expected_description": "Lentils, mature seeds, cooked, boiled, without salt",
+    "name_es": "Lentejas cocidas, hervidas sin sal",
+    "state": "cooked",
+    "allergens": [],
+    "allergen_review_complete": true,
+    "is_compound": false,
+    "vegan": true,
+    "vegetarian": true,
+    "notes": "Registro suplementario USDA SR Legacy 2018, no Foundation 2026. Alérgenos inherentes; trazas no evaluadas."
+  },
+  {
+    "fdc_id": 172475,
+    "expected_description": "Tofu, raw, firm, prepared with calcium sulfate",
+    "name_es": "Tofu firme con sulfato cálcico, crudo",
+    "state": "raw",
+    "allergens": [
+      "soy"
+    ],
+    "allergen_review_complete": false,
+    "is_compound": true,
+    "vegan": true,
+    "vegetarian": true,
+    "notes": "Registro suplementario USDA SR Legacy 2018, no Foundation 2026. Composición de marca pendiente."
+  },
+  {
+    "fdc_id": 168874,
+    "expected_description": "Quinoa, uncooked",
+    "name_es": "Quinoa en grano, seca",
+    "state": "dry",
+    "allergens": [],
+    "allergen_review_complete": true,
+    "is_compound": false,
+    "vegan": true,
+    "vegetarian": true,
+    "notes": "Registro suplementario USDA SR Legacy 2018, no Foundation 2026. Alérgenos inherentes; trazas no evaluadas."
+  }
+]
