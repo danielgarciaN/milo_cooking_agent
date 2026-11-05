@@ -1,2 +1,2 @@
-# Núcleo y herramientas de verificación. RAG opcional: pip install -e ".[rag]"
--e .[dev]
+# Código, RAG, grafo y herramientas del notebook académico.
+-e .[dev,rag,agent]

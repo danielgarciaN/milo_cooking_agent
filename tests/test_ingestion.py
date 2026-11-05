@@ -5,8 +5,7 @@ import pytest
 
 from milo.config import Settings
 from milo.models import DataSource
-from milo.rag.embeddings import create_embeddings
-from milo.rag.ingestion import chunk_page, clean_text, ingest_pdf
+from milo.rag import chunk_page, clean_text, create_embeddings, ingest_pdf
 
 ROOT = Path(__file__).resolve().parents[1]
 

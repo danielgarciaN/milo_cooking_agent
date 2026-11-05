@@ -3,11 +3,9 @@ from decimal import Decimal
 import pytest
 from pydantic import ValidationError
 
-from milo.domain.constraints import validate_recipe
-from milo.domain.nutrition import calculate_recipe_nutrition
-from milo.domain.recipes import adjust_portions
+from milo.catalog import AmbiguousFoodError, FoodNotFoundError, lookup_food
 from milo.models import DietaryRestriction, UserProfile
-from milo.repositories.catalog import AmbiguousFoodError, FoodNotFoundError, lookup_food
+from milo.nutrition import adjust_portions, calculate_recipe_nutrition, validate_recipe
 
 
 def test_lookup_explicit_and_ambiguous(catalog):

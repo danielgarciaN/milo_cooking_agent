@@ -5,7 +5,6 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
-import shutil
 import zipfile
 from datetime import UTC, datetime
 from pathlib import Path
@@ -15,44 +14,6 @@ from pypdf import PdfReader
 from pypdf.errors import PdfReadError
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCES = [
-    (
-        "AESAN_2022",
-        "https://www.aesan.gob.es/AECOSAN/docs/documentos/nutricion/RECOMENDACIONES_DIETETICAS.pdf",
-        "2022-12",
-        "Revisar reutilización; incluye imágenes de terceros.",
-    ),
-    (
-        "USDA_FOUNDATION_2026_10",
-        "https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_foundation_food_csv_2026-10-29.zip",
-        "2026-10-29",
-        "Datos FDC: dominio público/CC0 según https://fdc.nal.usda.gov/api-guide/",
-    ),
-    (
-        "USDA_FIELDS",
-        "https://fdc.nal.usda.gov/docs/Download_Field_Descriptions_Oct2020.pdf",
-        "2020-10",
-        "Documento técnico USDA; revisar componentes antes de redistribuir.",
-    ),
-    (
-        "USDA_FOUNDATION_2026_04",
-        "https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_foundation_food_csv_2026-04-30.zip",
-        "2026-04-30",
-        "Datos FDC: dominio público/CC0; https://fdc.nal.usda.gov/api-guide/",
-    ),
-    (
-        "USDA_FOUNDATION_JSON_2026_10",
-        "https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_foundation_food_json_2026-10-29.zip",
-        "2026-10-29",
-        "Datos FDC: dominio público/CC0; https://fdc.nal.usda.gov/api-guide/",
-    ),
-    (
-        "USDA_SR_LEGACY_2018",
-        "https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_sr_legacy_food_csv_2018-04.zip",
-        "2018-04",
-        "Datos FDC: dominio público/CC0; https://fdc.nal.usda.gov/api-guide/",
-    ),
-]
 
 
 def inspect_file(path: Path) -> dict:
@@ -83,62 +44,54 @@ def inspect_file(path: Path) -> dict:
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--fallback-dir", type=Path)
-    parser.add_argument("--skip-existing", action="store_true")
+    parser.add_argument(
+        "--skip-existing", action="store_true", help="Compatibilidad: siempre verifico los existentes"
+    )
     args = parser.parse_args()
-    raw = ROOT / "data/raw"
-    raw.mkdir(parents=True, exist_ok=True)
-    manifest_path = ROOT / "data/download_manifest.json"
-    records = json.loads(manifest_path.read_text(encoding="utf-8")) if manifest_path.exists() else []
-    for source_id, url, version, terms in SOURCES:
-        path = raw / url.rsplit("/", 1)[-1]
-        if args.skip_existing and path.exists():
-            print(source_id, "existing_file_inspected", inspect_file(path).get("size_bytes"), flush=True)
+    del args
+    registry = ROOT / "data/sources.json"
+    sources = json.loads(registry.read_text(encoding="utf-8"))
+    for source in sources:
+        if source["file_type"] not in {"pdf", "zip"} or source["usage"] == "unavailable":
             continue
-        record = {
-            "source_id": source_id,
-            "url": url,
-            "version": version,
-            "usage_conditions": terms,
-            "attempted_at": datetime.now(UTC).isoformat(),
-            "path": path.relative_to(ROOT).as_posix(),
-            "status": "failed",
-            "downloaded_at": None,
-            "http_status": None,
-        }
+        path = ROOT / (source["path"] or "data/raw/" + source["url"].rsplit("/", 1)[-1])
+        if path.exists():
+            details = inspect_file(path)
+            if source["sha256"] and details["sha256"] != source["sha256"]:
+                raise ValueError(f"Hash inesperado: {source['source_id']}")
+            print(source["source_id"], "archivo existente verificado", flush=True)
+            continue
+        path.parent.mkdir(parents=True, exist_ok=True)
+        # Valido en una carpeta temporal antes de publicar el archivo final.
+        temporary_dir = ROOT / "storage/downloads"
+        temporary_dir.mkdir(parents=True, exist_ok=True)
+        temporary = temporary_dir / path.name
+        record = {"url": source["url"], "attempted_at": datetime.now(UTC).isoformat(), "status": "failed"}
         try:
-            with httpx.stream("GET", url, follow_redirects=True, timeout=45) as response:
+            with httpx.stream("GET", source["url"], follow_redirects=True, timeout=45) as response:
                 record["http_status"] = response.status_code
-                record["resolved_url"] = str(response.url)
                 response.raise_for_status()
-                temporary = path.with_suffix(path.suffix + ".part")
                 with temporary.open("wb") as output:
                     for block in response.iter_bytes():
                         output.write(block)
+            details = inspect_file(temporary)
+            if source["sha256"] and details["sha256"] != source["sha256"]:
+                raise ValueError("La descarga no coincide con el hash registrado; revisar versión")
             temporary.replace(path)
-            record.update(
-                inspect_file(path), status="downloaded", downloaded_at=datetime.now(UTC).isoformat()
+            status = "incomplete_archive" if details.get("missing_usda_tables") else "downloaded"
+            record.update(details, status=status)
+            source.update({key: details[key] for key in ["size_bytes", "sha256"]})
+            source.update(
+                path=path.relative_to(ROOT).as_posix(),
+                status=status,
+                downloaded_at=datetime.now(UTC).isoformat(),
             )
         except (httpx.HTTPError, OSError, ValueError, zipfile.BadZipFile, PdfReadError) as exc:
             record["error"] = f"{type(exc).__name__}: {exc}"
-            fallback = args.fallback_dir / path.name if args.fallback_dir else None
-            if fallback and fallback.is_file():
-                shutil.copy2(fallback, path)
-                try:
-                    record.update(
-                        inspect_file(path), status="provided_local", imported_at=datetime.now(UTC).isoformat()
-                    )
-                except (OSError, ValueError, zipfile.BadZipFile, PdfReadError) as invalid:
-                    record["validation_error"] = str(invalid)
-        records.append(record)
-        manifest_path.write_text(json.dumps(records, ensure_ascii=False, indent=2), encoding="utf-8")
-        print(
-            source_id,
-            record["status"],
-            record.get("size_bytes"),
-            record.get("missing_usda_tables", ""),
-            flush=True,
-        )
+            source["status"] = "failed"
+        source.setdefault("download_attempts", []).append(record)
+        registry.write_text(json.dumps(sources, ensure_ascii=False, indent=2), encoding="utf-8")
+        print(source["source_id"], record["status"], flush=True)
 
 
 if __name__ == "__main__":

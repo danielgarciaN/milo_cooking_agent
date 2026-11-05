@@ -3,10 +3,9 @@
 import json
 from pathlib import Path
 
-from milo.domain.constraints import validate_recipe
-from milo.domain.nutrition import calculate_recipe_nutrition
+from milo.catalog import FoodCatalog
 from milo.models import Recipe, RecipeIngredient
-from milo.repositories.catalog import FoodCatalog
+from milo.nutrition import calculate_recipe_nutrition, validate_recipe
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -195,9 +194,6 @@ def main():
         "recipes": reports,
         "cooking_reference": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",
     }
-    (ROOT / "evaluation/recipe_report.json").write_text(
-        json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8"
-    )
     print(
         f"Recetas: {summary['count']}; verificadas: {summary['verified']}; pendientes: {summary['pending']}"
     )

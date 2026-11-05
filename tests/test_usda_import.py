@@ -4,7 +4,7 @@ import zipfile
 
 import pytest
 
-from milo.repositories.usda import import_foundation
+from milo.usda import import_foundation
 
 
 def make_archive(path, *, unit="G", amount="7.5", duplicate=False):

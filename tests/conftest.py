@@ -2,10 +2,21 @@ from pathlib import Path
 
 import pytest
 
+from milo.catalog import FoodCatalog
 from milo.models import Food, NutrientValues, Recipe, RecipeIngredient
-from milo.repositories.catalog import FoodCatalog
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def pytest_addoption(parser):
+    parser.addoption("--live", action="store_true", help="Ejecutar llamadas reales a Gemini")
+
+
+def pytest_collection_modifyitems(config, items):
+    if not config.getoption("--live"):
+        for item in items:
+            if "live" in item.keywords:
+                item.add_marker(pytest.mark.skip(reason="API real: activar con --live"))
 
 
 @pytest.fixture

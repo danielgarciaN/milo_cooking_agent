@@ -3,8 +3,8 @@
 import json
 from pathlib import Path
 
-from milo.repositories.catalog import FoodCatalog
-from milo.repositories.usda import import_foundation, import_foundation_json, write_food_csv
+from milo.catalog import FoodCatalog
+from milo.usda import import_foundation, import_foundation_json, write_food_csv
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -62,9 +62,6 @@ def main():
         "energy_precedence": [2048, 2047, 1008],
         "validation_scope": "Esquema, identidad FDC, tablas, unidades y valores de fuente; no análisis de laboratorio propio.",
     }
-    (ROOT / "evaluation/catalog_report.json").write_text(
-        json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8"
-    )
     print(json.dumps(report, ensure_ascii=False, indent=2))
 
 

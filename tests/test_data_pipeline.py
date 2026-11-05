@@ -8,10 +8,9 @@ from pathlib import Path
 import pytest
 
 import milo
-from milo.domain.constraints import validate_recipe
-from milo.domain.nutrition import calculate_recipe_nutrition
 from milo.models import DataSource, Recipe
-from milo.repositories.usda import import_foundation, import_foundation_json
+from milo.nutrition import calculate_recipe_nutrition, validate_recipe
+from milo.usda import import_foundation, import_foundation_json
 
 ROOT = Path(__file__).resolve().parents[1]
 

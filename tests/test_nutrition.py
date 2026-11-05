@@ -3,8 +3,8 @@ from decimal import Decimal
 import pytest
 from pydantic import ValidationError
 
-from milo.domain.nutrition import calculate_nutrition, calculate_recipe_nutrition
 from milo.models import NutrientValues, RecipeIngredient
+from milo.nutrition import calculate_nutrition, calculate_recipe_nutrition
 
 
 @pytest.mark.parametrize("grams,expected", [(100, 100), (150, 150), (250, 250)])

@@ -116,7 +116,7 @@ class DietaryRestriction(Contract):
         if self.kind in {"allergy", "intolerance"} and self.value not in get_args(Allergen):
             raise ValueError("Alérgeno no soportado: no se ignora silenciosamente")
         if self.kind == "diet" and self.value not in {"vegan", "vegetarian"}:
-            raise ValueError("Dieta no soportada en Sprint 1")
+            raise ValueError("Dieta no soportada: utiliza vegan o vegetarian")
         return self
 
 
@@ -151,15 +151,16 @@ class DataSource(Contract):
     source_id: Text
     title: Text
     url: Text
-    file_type: Literal["pdf", "zip", "web", "json"]
+    file_type: Literal["pdf", "zip", "web", "json", "markdown"]
     version: str | None = None
-    status: Literal["pending", "downloaded", "provided_local", "failed", "incomplete_archive"]
+    status: Literal["pending", "downloaded", "provided_local", "failed", "incomplete_archive", "created"]
     downloaded_at: str | None = None
     size_bytes: Annotated[int, Field(ge=0)] | None = None
     sha256: Annotated[str, Field(pattern=r"^[a-f0-9]{64}$")] | None = None
     path: str | None = None
     usage_conditions: Text
     usage: Text
+    download_attempts: list[dict] = Field(default_factory=list)
 
 
 class DocumentChunk(Contract):
@@ -168,7 +169,7 @@ class DocumentChunk(Contract):
     source_id: Text
     source_url: Text
     source_sha256: Text
-    page: Annotated[int, Field(gt=0)]
+    page: Annotated[int, Field(gt=0)] | None
     section: Text
     version: str | None = None
     usage: Text
