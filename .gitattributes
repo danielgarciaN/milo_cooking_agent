@@ -1,0 +1,5 @@
+# Los documentos del RAG se verifican por hash SHA-256 (data/sources.json):
+# git no debe cambiar sus finales de línea al clonar en Windows.
+data/documents/* -text
+data/*.json -text
+data/foods.csv -text

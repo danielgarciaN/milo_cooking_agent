@@ -54,7 +54,7 @@ def main():
     for source in sources:
         if source["file_type"] not in {"pdf", "zip"} or source["usage"] == "unavailable":
             continue
-        path = ROOT / (source["path"] or "data/raw/" + source["url"].rsplit("/", 1)[-1])
+        path = ROOT / (source["path"] or "data/usda/" + source["url"].rsplit("/", 1)[-1])
         if path.exists():
             details = inspect_file(path)
             if source["sha256"] and details["sha256"] != source["sha256"]:

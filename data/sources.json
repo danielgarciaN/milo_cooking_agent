@@ -9,26 +9,13 @@
     "downloaded_at": "2026-10-29T23:09:08.203650+00:00",
     "size_bytes": 9213199,
     "sha256": "8a7027defb7395a4b9136487dd9493bb9ff5a43940aafb8ab832dac78b21ccc8",
-    "path": "data/raw/RECOMENDACIONES_DIETETICAS.pdf",
-    "usage_conditions": "Revisar reutilización; incluye imágenes de terceros.",
+    "path": "data/documents/aesan_recomendaciones_dieteticas_2022.pdf",
+    "usage_conditions": "Publicación pública de AESAN (Ministerio de Consumo). Se cita la fuente; las imágenes son de terceros.",
     "usage": "rag_general",
-    "download_attempts": [
-      {
-        "source_id": "AESAN_2022",
-        "url": "https://www.aesan.gob.es/AECOSAN/docs/documentos/nutricion/RECOMENDACIONES_DIETETICAS.pdf",
-        "version": "2022-12",
-        "usage_conditions": "Revisar reutilización; incluye imágenes de terceros.",
-        "attempted_at": "2026-10-29T23:09:06.768160+00:00",
-        "path": "data/raw/RECOMENDACIONES_DIETETICAS.pdf",
-        "status": "downloaded",
-        "downloaded_at": "2026-10-29T23:09:08.203650+00:00",
-        "http_status": 200,
-        "resolved_url": "https://www.aesan.gob.es/dam/jcr:26812ed7-ae7f-496a-a0d4-94ba36c63dc9/RECOMENDACIONES_DIETETICAS.pdf",
-        "size_bytes": 9213199,
-        "sha256": "8a7027defb7395a4b9136487dd9493bb9ff5a43940aafb8ab832dac78b21ccc8",
-        "file_type": "pdf",
-        "pages": 19
-      }
+    "skip_pages": [
+      1,
+      2,
+      19
     ]
   },
   {
@@ -41,47 +28,9 @@
     "downloaded_at": "2026-10-29T23:09:09.531881+00:00",
     "size_bytes": 1127612,
     "sha256": "e396b1ffc3ea05d1bdccbcddbfd2a4fcb42f64d37fabdacdd9c35158c4ced817",
-    "path": "data/raw/FoodData_Central_foundation_food_csv_2026-10-29.zip",
+    "path": "data/usda/FoodData_Central_foundation_food_csv_2026-10-29.zip",
     "usage_conditions": "Datos FDC: dominio público/CC0 según https://fdc.nal.usda.gov/api-guide/",
-    "usage": "structured_food_macros",
-    "download_attempts": [
-      {
-        "source_id": "USDA_FOUNDATION_2026_10",
-        "url": "https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_foundation_food_csv_2026-10-29.zip",
-        "version": "2026-10-29",
-        "usage_conditions": "Datos FDC: dominio público/CC0 según https://fdc.nal.usda.gov/api-guide/",
-        "attempted_at": "2026-10-29T23:09:08.204456+00:00",
-        "path": "data/raw/FoodData_Central_foundation_food_csv_2026-10-29.zip",
-        "status": "downloaded",
-        "downloaded_at": "2026-10-29T23:09:09.531881+00:00",
-        "http_status": 200,
-        "resolved_url": "https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_foundation_food_csv_2026-10-29.zip",
-        "size_bytes": 1127612,
-        "sha256": "e396b1ffc3ea05d1bdccbcddbfd2a4fcb42f64d37fabdacdd9c35158c4ced817",
-        "file_type": "zip",
-        "members": [
-          "FoodData_Central_foundation_food_csv_2026-10-29/",
-          "FoodData_Central_foundation_food_csv_2026-10-29/agricultural_samples.csv",
-          "FoodData_Central_foundation_food_csv_2026-10-29/food_protein_conversion_factor.csv",
-          "FoodData_Central_foundation_food_csv_2026-10-29/acquisition_samples.csv",
-          "FoodData_Central_foundation_food_csv_2026-10-29/lab_method_nutrient.csv",
-          "FoodData_Central_foundation_food_csv_2026-10-29/sub_sample_result.csv",
-          "FoodData_Central_foundation_food_csv_2026-10-29/measure_unit.csv",
-          "FoodData_Central_foundation_food_csv_2026-10-29/market_acquisition.csv",
-          "FoodData_Central_foundation_food_csv_2026-10-29/Download API Field Descriptions.xlsx",
-          "FoodData_Central_foundation_food_csv_2026-10-29/lab_method.csv",
-          "FoodData_Central_foundation_food_csv_2026-10-29/foundation_food.csv",
-          "FoodData_Central_foundation_food_csv_2026-10-29/food_category.csv",
-          "FoodData_Central_foundation_food_csv_2026-10-29/food_attribute_type.csv",
-          "FoodData_Central_foundation_food_csv_2026-10-29/lab_method_code.csv",
-          "FoodData_Central_foundation_food_csv_2026-10-29/nutrient.csv"
-        ],
-        "missing_usda_tables": [
-          "food.csv",
-          "food_nutrient.csv"
-        ]
-      }
-    ]
+    "usage": "structured_food_macros"
   },
   {
     "source_id": "USDA_FIELDS",
@@ -93,27 +42,9 @@
     "downloaded_at": "2026-10-29T23:09:10.449552+00:00",
     "size_bytes": 148996,
     "sha256": "e21d658d4d3fa583aceaa78e23efd4e64dbf9010fd0210a87b94edbcfb56928a",
-    "path": "data/raw/Download_Field_Descriptions_Oct2020.pdf",
+    "path": "data/usda/Download_Field_Descriptions_Oct2020.pdf",
     "usage_conditions": "Documento técnico USDA; revisar componentes antes de redistribuir.",
-    "usage": "data_dictionary",
-    "download_attempts": [
-      {
-        "source_id": "USDA_FIELDS",
-        "url": "https://fdc.nal.usda.gov/docs/Download_Field_Descriptions_Oct2020.pdf",
-        "version": "2020-10",
-        "usage_conditions": "Documento técnico USDA; revisar componentes antes de redistribuir.",
-        "attempted_at": "2026-10-29T23:09:09.532333+00:00",
-        "path": "data/raw/Download_Field_Descriptions_Oct2020.pdf",
-        "status": "downloaded",
-        "downloaded_at": "2026-10-29T23:09:10.449552+00:00",
-        "http_status": 200,
-        "resolved_url": "https://fdc.nal.usda.gov/docs/Download_Field_Descriptions_Oct2020.pdf",
-        "size_bytes": 148996,
-        "sha256": "e21d658d4d3fa583aceaa78e23efd4e64dbf9010fd0210a87b94edbcfb56928a",
-        "file_type": "pdf",
-        "pages": 17
-      }
-    ]
+    "usage": "data_dictionary"
   },
   {
     "source_id": "USDA_FOUNDATION_2026_04",
@@ -125,53 +56,9 @@
     "downloaded_at": "2026-10-29T23:09:48.181383+00:00",
     "size_bytes": 3825741,
     "sha256": "70457ee9d9342f43bda2010318c85f04210c689fdeb9cd2da4c513b0e8dbc655",
-    "path": "data/raw/FoodData_Central_foundation_food_csv_2026-04-30.zip",
+    "path": "data/usda/FoodData_Central_foundation_food_csv_2026-04-30.zip",
     "usage_conditions": "Datos FDC: dominio público/CC0; https://fdc.nal.usda.gov/api-guide/",
-    "usage": "structured_food_macros",
-    "download_attempts": [
-      {
-        "source_id": "USDA_FOUNDATION_2026_04",
-        "url": "https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_foundation_food_csv_2026-04-30.zip",
-        "version": "2026-04-30",
-        "status": "downloaded",
-        "downloaded_at": "2026-10-29T23:09:48.181383+00:00",
-        "http_status": 200,
-        "path": "data/raw/FoodData_Central_foundation_food_csv_2026-04-30.zip",
-        "usage_conditions": "USDA FDC public domain / CC0; https://fdc.nal.usda.gov/api-guide/",
-        "size_bytes": 3825741,
-        "sha256": "70457ee9d9342f43bda2010318c85f04210c689fdeb9cd2da4c513b0e8dbc655",
-        "file_type": "zip",
-        "members": [
-          "FoodData_Central_foundation_food_csv_2026-04-30/",
-          "FoodData_Central_foundation_food_csv_2026-04-30/agricultural_samples.csv",
-          "FoodData_Central_foundation_food_csv_2026-04-30/food_protein_conversion_factor.csv",
-          "FoodData_Central_foundation_food_csv_2026-04-30/acquisition_samples.csv",
-          "FoodData_Central_foundation_food_csv_2026-04-30/sample_food.csv",
-          "FoodData_Central_foundation_food_csv_2026-04-30/lab_method_nutrient.csv",
-          "FoodData_Central_foundation_food_csv_2026-04-30/food_attribute.csv",
-          "FoodData_Central_foundation_food_csv_2026-04-30/sub_sample_result.csv",
-          "FoodData_Central_foundation_food_csv_2026-04-30/food_nutrient_conversion_factor.csv",
-          "FoodData_Central_foundation_food_csv_2026-04-30/measure_unit.csv",
-          "FoodData_Central_foundation_food_csv_2026-04-30/sub_sample_food.csv",
-          "FoodData_Central_foundation_food_csv_2026-04-30/input_food.csv",
-          "FoodData_Central_foundation_food_csv_2026-04-30/market_acquisition.csv",
-          "FoodData_Central_foundation_food_csv_2026-04-30/Download API Field Descriptions.xlsx",
-          "FoodData_Central_foundation_food_csv_2026-04-30/food_component.csv",
-          "FoodData_Central_foundation_food_csv_2026-04-30/food.csv",
-          "FoodData_Central_foundation_food_csv_2026-04-30/lab_method.csv",
-          "FoodData_Central_foundation_food_csv_2026-04-30/foundation_food.csv",
-          "FoodData_Central_foundation_food_csv_2026-04-30/food_calorie_conversion_factor.csv",
-          "FoodData_Central_foundation_food_csv_2026-04-30/food_category.csv",
-          "FoodData_Central_foundation_food_csv_2026-04-30/food_attribute_type.csv",
-          "FoodData_Central_foundation_food_csv_2026-04-30/food_portion.csv",
-          "FoodData_Central_foundation_food_csv_2026-04-30/food_nutrient.csv",
-          "FoodData_Central_foundation_food_csv_2026-04-30/lab_method_code.csv",
-          "FoodData_Central_foundation_food_csv_2026-04-30/nutrient.csv",
-          "FoodData_Central_foundation_food_csv_2026-04-30/food_update_log_entry.csv"
-        ],
-        "missing_usda_tables": []
-      }
-    ]
+    "usage": "structured_food_macros"
   },
   {
     "source_id": "USDA_FOUNDATION_JSON_2026_10",
@@ -183,27 +70,9 @@
     "downloaded_at": "2026-10-29T23:09:28.885254+00:00",
     "size_bytes": 696866,
     "sha256": "dd414cc9f1a132626bad354ef6655972c78b44aff14f16114dc899708663c579",
-    "path": "data/raw/FoodData_Central_foundation_food_json_2026-10-29.zip",
+    "path": "data/usda/FoodData_Central_foundation_food_json_2026-10-29.zip",
     "usage_conditions": "Datos FDC: dominio público/CC0; https://fdc.nal.usda.gov/api-guide/",
-    "usage": "structured_food_macros",
-    "download_attempts": [
-      {
-        "source_id": "USDA_FALLBACK_FoodData_Central_foundation_food_json_2026-10-29",
-        "url": "https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_foundation_food_json_2026-10-29.zip",
-        "version": "2026-10-29",
-        "status": "downloaded",
-        "downloaded_at": "2026-10-29T23:09:28.885254+00:00",
-        "http_status": 200,
-        "path": "data/raw/FoodData_Central_foundation_food_json_2026-10-29.zip",
-        "usage_conditions": "USDA FDC public domain / CC0; https://fdc.nal.usda.gov/api-guide/",
-        "size_bytes": 696866,
-        "sha256": "dd414cc9f1a132626bad354ef6655972c78b44aff14f16114dc899708663c579",
-        "file_type": "zip",
-        "members": [
-          "FoodData_Central_foundation_food_json_2026-10-29.json"
-        ]
-      }
-    ]
+    "usage": "structured_food_macros"
   },
   {
     "source_id": "USDA_SR_LEGACY_2018",
@@ -215,46 +84,9 @@
     "downloaded_at": "2026-10-29T23:14:14.141289+00:00",
     "size_bytes": 6074592,
     "sha256": "b80817294b8850530aaedf2e515c02593b1824f763a0ff356e5c2081643e6fd0",
-    "path": "data/raw/FoodData_Central_sr_legacy_food_csv_2018-04.zip",
+    "path": "data/usda/FoodData_Central_sr_legacy_food_csv_2018-04.zip",
     "usage_conditions": "Datos FDC: dominio público/CC0; https://fdc.nal.usda.gov/api-guide/",
-    "usage": "structured_food_macros",
-    "download_attempts": [
-      {
-        "source_id": "USDA_SR_LEGACY_2018",
-        "url": "https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_sr_legacy_food_csv_2018-04.zip",
-        "version": "2018-04",
-        "http_status": 200,
-        "usage_conditions": "USDA FDC public domain / CC0; https://fdc.nal.usda.gov/api-guide/",
-        "size_bytes": 6074592,
-        "sha256": "b80817294b8850530aaedf2e515c02593b1824f763a0ff356e5c2081643e6fd0",
-        "file_type": "zip",
-        "members": [
-          "FoodData_Central_sr_legacy_food_csv_2018-04/",
-          "FoodData_Central_sr_legacy_food_csv_2018-04/food_update_log_entry.csv",
-          "FoodData_Central_sr_legacy_food_csv_2018-04/sr_legacy_food.csv",
-          "FoodData_Central_sr_legacy_food_csv_2018-04/Download & API Field Descriptions-2019-10-11-16-22.xlsx",
-          "FoodData_Central_sr_legacy_food_csv_2018-04/food_nutrient_source.csv",
-          "FoodData_Central_sr_legacy_food_csv_2018-04/food_attribute_type.csv",
-          "FoodData_Central_sr_legacy_food_csv_2018-04/measure_unit.csv",
-          "FoodData_Central_sr_legacy_food_csv_2018-04/food_nutrient_conversion_factor.csv",
-          "FoodData_Central_sr_legacy_food_csv_2018-04/nutrient.csv",
-          "FoodData_Central_sr_legacy_food_csv_2018-04/food_nutrient_derivation.csv",
-          "FoodData_Central_sr_legacy_food_csv_2018-04/food_attribute.csv",
-          "FoodData_Central_sr_legacy_food_csv_2018-04/food.csv",
-          "FoodData_Central_sr_legacy_food_csv_2018-04/food_protein_conversion_factor.csv",
-          "FoodData_Central_sr_legacy_food_csv_2018-04/food_category.csv",
-          "FoodData_Central_sr_legacy_food_csv_2018-04/all_downloaded_table_record_counts.csv",
-          "FoodData_Central_sr_legacy_food_csv_2018-04/food_nutrient.csv",
-          "FoodData_Central_sr_legacy_food_csv_2018-04/retention_factor.csv",
-          "FoodData_Central_sr_legacy_food_csv_2018-04/food_calorie_conversion_factor.csv",
-          "FoodData_Central_sr_legacy_food_csv_2018-04/food_portion.csv"
-        ],
-        "missing_usda_tables": [],
-        "status": "downloaded",
-        "downloaded_at": "2026-10-29T23:14:14.141289+00:00",
-        "path": "data/raw/FoodData_Central_sr_legacy_food_csv_2018-04.zip"
-      }
-    ]
+    "usage": "structured_food_macros"
   },
   {
     "source_id": "WHO_2026",
@@ -268,8 +100,7 @@
     "sha256": null,
     "path": null,
     "usage_conditions": "do_not_copy_full_page",
-    "usage": "rag_paraphrased_summary",
-    "download_attempts": []
+    "usage": "rag_paraphrased_summary"
   },
   {
     "source_id": "HARVARD_PLATE",
@@ -283,23 +114,21 @@
     "sha256": null,
     "path": null,
     "usage_conditions": "review",
-    "usage": "supporting_reference",
-    "download_attempts": []
+    "usage": "supporting_reference"
   },
   {
     "source_id": "MILO_RECETAS",
     "title": "Mi recetario revisado para MILO",
-    "url": "data/documents/recetas_revisadas.md",
+    "url": "data/documents/recetario_milo.md",
     "file_type": "markdown",
     "version": "2026-10-30",
     "status": "created",
     "downloaded_at": null,
-    "size_bytes": 8699,
-    "sha256": "2351de7a628912e6926b9c39f3d1f8282d1f7a6c60450fc004971d13af3f7802",
-    "path": "data/documents/recetas_revisadas.md",
+    "size_bytes": 24032,
+    "sha256": "3dee1c5212e42ecdeaefd45a5ec51901f212ef31368423215d56fe9c0ebca419",
+    "path": "data/documents/recetario_milo.md",
     "usage_conditions": "Documento propio del proyecto; referencias externas identificadas.",
-    "usage": "rag_general",
-    "download_attempts": []
+    "usage": "rag_general"
   },
   {
     "source_id": "MILO_TECNICAS",
@@ -313,31 +142,6 @@
     "sha256": "61310fce4d950e5eee9b40b349507346d70aa104440a7d38e9f40e1cefcb98b4",
     "path": "data/documents/tecnicas_y_sustituciones.md",
     "usage_conditions": "Documento propio del proyecto; referencias externas identificadas.",
-    "usage": "rag_general",
-    "download_attempts": []
-  },
-  {
-    "source_id": "USDA_FALLBACK_PROBE",
-    "title": "Intento de descarga no disponible",
-    "url": "https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_foundation_food_csv_2026-04-23.zip",
-    "file_type": "zip",
-    "version": null,
-    "status": "failed",
-    "usage_conditions": "Consultar fuente USDA",
-    "usage": "unavailable",
-    "path": null,
-    "sha256": null,
-    "size_bytes": null,
-    "downloaded_at": null,
-    "download_attempts": [
-      {
-        "source_id": "USDA_FALLBACK_PROBE",
-        "url": "https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_foundation_food_csv_2026-04-23.zip",
-        "status": "failed",
-        "http_status": 404,
-        "attempted_at": "2026-10-29T23:09:48.181405+00:00",
-        "error": "URL guessed before official link inspection; not used"
-      }
-    ]
+    "usage": "rag_general"
   }
 ]

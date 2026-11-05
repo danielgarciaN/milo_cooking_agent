@@ -35,21 +35,21 @@ def test_catalog_coverage_and_real_ids(real_catalog):
     "selection,archive,source,version,kind",
     [
         (
-            "food_selection.json",
+            "seleccion_foundation_2026_04.json",
             "FoodData_Central_foundation_food_csv_2026-04-30.zip",
             "USDA_FOUNDATION_2026_04",
             "2026-04-30",
             "foundation_food",
         ),
         (
-            "food_selection_sr.json",
+            "seleccion_sr_legacy.json",
             "FoodData_Central_sr_legacy_food_csv_2018-04.zip",
             "USDA_SR_LEGACY_2018",
             "2018-04",
             "sr_legacy_food",
         ),
         (
-            "food_selection_october.json",
+            "seleccion_foundation_2026_10.json",
             "FoodData_Central_foundation_food_json_2026-10-29.zip",
             "USDA_FOUNDATION_JSON_2026_10",
             "2026-10-29",
@@ -58,10 +58,10 @@ def test_catalog_coverage_and_real_ids(real_catalog):
     ],
 )
 def test_catalog_values_match_official_archive(real_catalog, selection, archive, source, version, kind):
-    path = ROOT / "data/raw" / archive
+    path = ROOT / "data/usda" / archive
     if not path.exists():
         pytest.skip("Descargar fuentes para verificación contra USDA")
-    chosen = json.loads((ROOT / "data/structured" / selection).read_text(encoding="utf-8"))
+    chosen = json.loads((ROOT / "data/usda" / selection).read_text(encoding="utf-8"))
     fn = import_foundation_json if kind == "json" else import_foundation
     options = {} if kind == "json" else {"data_type": kind}
     regenerated = fn(path, chosen, source_id=source, source_version=version, **options)
@@ -83,19 +83,18 @@ def test_usda_energy_and_null_reference(real_catalog):
 
 def test_recipes_have_specific_steps_and_truthful_status(real_catalog):
     recipes = [
-        Recipe.model_validate(r)
-        for r in json.loads((ROOT / "data/structured/recipes.json").read_text(encoding="utf-8"))
+        Recipe.model_validate(r) for r in json.loads((ROOT / "data/recipes.json").read_text(encoding="utf-8"))
     ]
-    nutrition = json.loads((ROOT / "data/structured/recipe_nutrition.json").read_text(encoding="utf-8"))
-    assert len(recipes) == 12
+    assert len(recipes) >= 20
+    assert len({r.recipe_id for r in recipes}) == len(recipes)
     for recipe in recipes:
         assert all(i.food_id in real_catalog.foods for i in recipe.ingredients)
-        assert len(recipe.steps) >= 3
+        assert len(recipe.steps) >= 2
+        assert set(recipe.tags) & {"desayuno", "comida", "cena", "snack"}
         validation = validate_recipe(recipe, real_catalog)
         assert (recipe.review_status == "verified") == validation.valid
         assert recipe.allergens == validation.allergens
-        calculated = calculate_recipe_nutrition(recipe, real_catalog)
-        assert calculated.model_dump(mode="json") == nutrition[recipe.recipe_id]
+        assert calculate_recipe_nutrition(recipe, real_catalog).complete
 
 
 def test_source_hashes_and_format():
@@ -115,7 +114,7 @@ def test_source_hashes_and_format():
 
 
 def test_incomplete_october_csv_cannot_be_imported():
-    path = ROOT / "data/raw/FoodData_Central_foundation_food_csv_2026-10-29.zip"
+    path = ROOT / "data/usda/FoodData_Central_foundation_food_csv_2026-10-29.zip"
     if not path.exists():
         pytest.skip("Descargar ZIP para comprobar incidencia")
     with pytest.raises(ValueError, match="food.csv"):

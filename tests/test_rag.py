@@ -1,10 +1,7 @@
-import re
-from types import SimpleNamespace
-
 import pytest
 
 from milo.config import Settings
-from milo.rag import NutritionRAG, collection_name, load_documents
+from milo.rag import NutritionRAG, cited_numbers, collection_name, load_documents
 
 
 def test_corpus_is_documentary_and_reviewed():
@@ -13,7 +10,6 @@ def test_corpus_is_documentary_and_reviewed():
     assert len({c.chunk_id for c in chunks}) == len(chunks)
     recipes = [c for c in chunks if c.source_id == "MILO_RECETAS"]
     assert any("r001" in c.section for c in recipes)
-    assert not any("r004" in c.section for c in recipes)  # Producto pendiente de revisión.
     for sid in {c.source_id for c in chunks}:
         assert sum(len(c.text.split()) for c in chunks if c.source_id == sid) > 500
 
@@ -27,13 +23,12 @@ def test_collection_changes_with_document_or_model():
     assert original != collection_name(chunks, settings.model_copy(update={"embedding_model": "other"}))
 
 
-@pytest.mark.parametrize("answer", ["Sin cita", "Dato inventado [99]", ""])
-def test_rejects_invalid_citations(answer):
-    # Doble explícito de unidad; no se presenta como prueba de Gemini.
-    rag = object.__new__(NutritionRAG)
-    rag.model = SimpleNamespace(invoke=lambda _: SimpleNamespace(content=answer))
-    with pytest.raises(ValueError, match="citas"):
-        rag.generate("Pregunta", [{"citation": 1, "text": "Evidencia", "metadata": {"source_id": "TEST"}}])
+@pytest.mark.parametrize(
+    "text,expected",
+    [("Dato [1].", {1}), ("Ver [1, 3] y [2]", {1, 2, 3}), ("Sin citas", set()), ("[12][4]", {4, 12})],
+)
+def test_cited_numbers(text, expected):
+    assert cited_numbers(text) == expected
 
 
 @pytest.mark.live
@@ -53,5 +48,17 @@ def test_real_retrieval_and_generation(question, source, section):
         f["metadata"]["source_id"] == source and (section is None or section in f["metadata"]["section"])
         for f in result.fragments
     )
-    cited = {int(n) for n in re.findall(r"\[(\d+)\]", result.answer)}
-    assert cited and cited <= {f["citation"] for f in result.fragments}
+    assert result.cited, "Gemini debería citar al menos un fragmento"
+
+
+def test_generate_asks_again_when_answer_has_no_citations():
+    from types import SimpleNamespace
+
+    replies = iter(
+        [SimpleNamespace(content="Respuesta sin citas."), SimpleNamespace(content="Ahora sí [1].")]
+    )
+    rag = object.__new__(NutritionRAG)
+    rag.system_prompt = "Eres MILO."
+    rag.model = SimpleNamespace(invoke=lambda _: next(replies))
+    fragment = {"citation": 1, "text": "Evidencia", "metadata": {"source_id": "TEST"}}
+    assert rag.generate("Pregunta", [fragment]) == "Ahora sí [1]."

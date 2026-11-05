@@ -4,23 +4,24 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "milo-nutrition-chef"
-version = "0.1.0"
-description = "Núcleo verificable de MILO: datos nutricionales, recetas e ingestión documental"
+version = "1.0.0"
+description = "MILO — AI Nutrition Chef: asistente de cocina y nutrición con Gemini, RAG (ChromaDB) y LangGraph"
 readme = "README.md"
+license = "MIT"
 requires-python = ">=3.11"
-dependencies = ["pydantic>=2.10,<3", "pydantic-settings>=2.7,<3", "pypdf>=5,<7", "fonttools>=4.55,<5", "httpx>=0.28,<1"]
-
-[project.optional-dependencies]
-dev = ["pytest>=8,<10", "ruff>=0.9,<1", "nbformat>=5,<6", "nbclient>=0.10,<1", "ipykernel>=6,<8"]
-rag = ["langchain-google-genai>=4,<5", "langchain-chroma>=1,<2", "chromadb>=1,<2"]
-agent = ["langgraph>=1,<2"]
+# Las dependencias completas están en requirements.txt.
+dependencies = ["pydantic>=2.10,<3", "pydantic-settings>=2.7,<3", "pypdf>=5,<7"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
 
+[tool.setuptools.package-data]
+milo = ["prompts/*.md"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-addopts = "-ra"
+pythonpath = ["src"]
+addopts = "-ra -p no:warnings"
 markers = ["live: llamadas reales a Gemini y al índice local; ejecutar con --live"]
 
 [tool.ruff]

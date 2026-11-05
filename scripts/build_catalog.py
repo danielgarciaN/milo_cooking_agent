@@ -3,23 +3,23 @@
 import json
 from pathlib import Path
 
-from milo.catalog import FoodCatalog
+from milo.nutrition import FoodCatalog
 from milo.usda import import_foundation, import_foundation_json, write_food_csv
 
 ROOT = Path(__file__).resolve().parents[1]
 
 
 def main():
-    selection = json.loads((ROOT / "data/structured/food_selection.json").read_text(encoding="utf-8"))
+    selection = json.loads((ROOT / "data/usda/seleccion_foundation_2026_04.json").read_text(encoding="utf-8"))
     foods = import_foundation(
-        ROOT / "data/raw/FoodData_Central_foundation_food_csv_2026-04-30.zip",
+        ROOT / "data/usda/FoodData_Central_foundation_food_csv_2026-04-30.zip",
         selection,
         source_id="USDA_FOUNDATION_2026_04",
         source_version="2026-04-30",
     )
-    october = json.loads((ROOT / "data/structured/food_selection_october.json").read_text(encoding="utf-8"))
+    october = json.loads((ROOT / "data/usda/seleccion_foundation_2026_10.json").read_text(encoding="utf-8"))
     upgrades = import_foundation_json(
-        ROOT / "data/raw/FoodData_Central_foundation_food_json_2026-10-29.zip",
+        ROOT / "data/usda/FoodData_Central_foundation_food_json_2026-10-29.zip",
         october,
         source_id="USDA_FOUNDATION_JSON_2026_10",
         source_version="2026-10-29",
@@ -27,17 +27,17 @@ def main():
     by_id = {f.food_id: f for f in foods}
     by_id.update({f.food_id: f for f in upgrades})
     foods = list(by_id.values())
-    extra = json.loads((ROOT / "data/structured/food_selection_sr.json").read_text(encoding="utf-8"))
+    extra = json.loads((ROOT / "data/usda/seleccion_sr_legacy.json").read_text(encoding="utf-8"))
     foods.extend(
         import_foundation(
-            ROOT / "data/raw/FoodData_Central_sr_legacy_food_csv_2018-04.zip",
+            ROOT / "data/usda/FoodData_Central_sr_legacy_food_csv_2018-04.zip",
             extra,
             source_id="USDA_SR_LEGACY_2018",
             source_version="2018-04",
             data_type="sr_legacy_food",
         )
     )
-    output = ROOT / "data/structured/foods.csv"
+    output = ROOT / "data/foods.csv"
     write_food_csv(foods, output)
     reloaded = FoodCatalog.from_csv(output)
     assert len(reloaded.foods) == len(foods)

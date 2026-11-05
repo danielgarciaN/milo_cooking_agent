@@ -3,18 +3,34 @@ from decimal import Decimal
 import pytest
 from pydantic import ValidationError
 
-from milo.catalog import AmbiguousFoodError, FoodNotFoundError, lookup_food
 from milo.models import DietaryRestriction, UserProfile
-from milo.nutrition import adjust_portions, calculate_recipe_nutrition, validate_recipe
+from milo.nutrition import (
+    AmbiguousFoodError,
+    FoodNotFoundError,
+    adjust_portions,
+    calculate_recipe_nutrition,
+    validate_recipe,
+)
 
 
 def test_lookup_explicit_and_ambiguous(catalog):
-    assert lookup_food("a", catalog).name_es == "Alimento A"
-    assert lookup_food("Alimento A", catalog, state="cooked").food_id == "cooked"
+    assert catalog.lookup_food("a").name_es == "Alimento A"
+    assert catalog.lookup_food("Alimento A", state="cooked").food_id == "cooked"
     with pytest.raises(AmbiguousFoodError):
-        lookup_food("Alimento A", catalog)
+        catalog.lookup_food("Alimento A")
     with pytest.raises(FoodNotFoundError):
-        lookup_food("inexistente", catalog)
+        catalog.lookup_food("inexistente")
+
+
+def test_free_text_resolution(catalog, real_catalog):
+    assert catalog.resolve("a").food_id == "a"
+    with pytest.raises(AmbiguousFoodError):
+        catalog.resolve("alimento")
+    # Mismo alimento crudo y cocinado: elijo el estado en que se suele pesar.
+    assert real_catalog.resolve("pollo").state == "raw"
+    assert real_catalog.resolve("huevos").name_es.startswith("Huevo entero")
+    with pytest.raises(FoodNotFoundError):
+        catalog.resolve("chocolate")
 
 
 @pytest.mark.parametrize("kind", ["allergy", "intolerance"])
@@ -26,10 +42,13 @@ def test_known_allergens(catalog, recipe, kind):
     assert "allergen_conflict:a:egg" in result.errors
 
 
-def test_compound_unknown_allergens_blocks_validation(catalog, recipe):
+def test_commercial_product_warns_and_blocks_only_with_allergies(catalog, recipe):
     catalog.foods["a"].is_compound = True
     catalog.foods["a"].allergen_review_complete = False
     result = validate_recipe(recipe, catalog)
+    assert result.valid and any("etiqueta" in w for w in result.warnings)
+    allergic = UserProfile(restrictions=[DietaryRestriction(kind="allergy", value="milk")])
+    result = validate_recipe(recipe, catalog, allergic)
     assert not result.valid and "allergens_pending:a" in result.errors
 
 

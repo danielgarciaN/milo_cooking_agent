@@ -1,6 +1,10 @@
+# Secretos: la clave de Gemini nunca se sube
 .env
 .env.*
 !.env.example
+.streamlit/secrets.toml
+
+# Entorno y cachés de Python
 .venv/
 __pycache__/
 *.py[cod]
@@ -10,10 +14,10 @@ __pycache__/
 .ipynb_checkpoints/
 build/
 dist/
+
+# Artefactos generados: índice de Chroma y memoria de conversaciones (se regeneran)
 storage/
-data/raw/*
-!data/raw/.gitkeep
-data/processed/*
-!data/processed/.gitkeep
+
+# Descargas grandes de USDA (se recuperan con python scripts/download_sources.py)
+data/usda/*.zip
 *.part
-.streamlit/secrets.toml

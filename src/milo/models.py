@@ -99,6 +99,8 @@ class Recipe(Contract):
     ingredients: Annotated[list[RecipeIngredient], Field(min_length=1)]
     steps: Annotated[list[Text], Field(min_length=1)]
     time_minutes_estimate: Annotated[int, Field(strict=True, gt=0)] | None = None
+    difficulty: Literal["fácil", "media"] = "fácil"
+    # Tipo de comida: desayuno, comida, cena o snack. Lo uso para buscar recetas y organizar el menú.
     tags: list[str] = Field(default_factory=list)
     allergens: set[Allergen] = Field(default_factory=set)
     review_status: ReviewStatus = "pending"
@@ -121,8 +123,9 @@ class DietaryRestriction(Contract):
 
 
 class UserProfile(Contract):
-    user_id: Text
+    user_id: Text = "usuario"
     goal: str | None = None
+    daily_kcal: Annotated[int, Field(gt=0, le=6000)] | None = None
     restrictions: list[DietaryRestriction] = Field(default_factory=list)
     disliked_food_ids: set[str] = Field(default_factory=set)
     preferences: list[str] = Field(default_factory=list)
@@ -160,6 +163,8 @@ class DataSource(Contract):
     path: str | None = None
     usage_conditions: Text
     usage: Text
+    # Páginas de un PDF que no indexo porque no aportan contenido (portada, índice, contraportada).
+    skip_pages: list[int] = Field(default_factory=list)
     download_attempts: list[dict] = Field(default_factory=list)
 
 

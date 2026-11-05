@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MILO — AI Nutrition Chef</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root { --orange:#F49B43; --cream:#FFF6E9; --green:#86AD8F; --charcoal:#292D32; --peach:#FDEBD3; --line:#F6D7B0; }
+  * { box-sizing: border-box; }
+  html, body { margin:0; height:100%; background:var(--cream); color:var(--charcoal);
+    font-family:'Nunito', 'Segoe UI', system-ui, sans-serif; overflow:hidden; }
+  .slide { position:absolute; inset:0; padding:5vh 7vw; display:none; flex-direction:column; justify-content:center; }
+  .slide.active { display:flex; animation:in .35s ease; }
+  @keyframes in { from { opacity:0; transform:translateY(12px);} to { opacity:1; transform:none; } }
+  h1 { font-size:5.2vw; font-weight:900; margin:0; letter-spacing:-2px; line-height:1; }
+  h1 span, .o { color:var(--orange); }
+  h2 { font-size:3.1vw; font-weight:900; margin:0 0 3vh; letter-spacing:-1px; }
+  p, li { font-size:1.65vw; line-height:1.45; }
+  .kicker { color:var(--green); font-weight:800; letter-spacing:.25em; text-transform:uppercase; font-size:1.1vw; margin-bottom:1.2vh; }
+  .row { display:flex; gap:2.2vw; align-items:center; }
+  .grow { flex:1; }
+  .card { background:#fff; border-radius:26px; padding:2.4vh 1.8vw; box-shadow:0 8px 30px rgba(244,155,67,.14); border:1px solid #F6E3CB; }
+  .grid { display:grid; gap:1.4vw; }
+  .g2 { grid-template-columns:repeat(2,1fr); } .g3 { grid-template-columns:repeat(3,1fr); } .g4 { grid-template-columns:repeat(4,1fr); }
+  .big { font-size:4vw; font-weight:900; color:var(--orange); line-height:1; }
+  .small { font-size:1.15vw; color:#6B6F75; }
+  .chip { display:inline-block; padding:.35vh .9vw; border-radius:999px; background:var(--peach); border:1px solid var(--line);
+    font-weight:800; font-size:1.05vw; margin:.3vh .3vw .3vh 0; }
+  .chip.g { background:#E6F0E8; border-color:#C9DECE; color:#3F6B4A; }
+  .chip.o { background:var(--orange); border-color:var(--orange); color:#fff; }
+  .mascot { width:30vw; max-width:520px; border-radius:40px; box-shadow:0 14px 50px rgba(244,155,67,.25); }
+  .pipeline { display:flex; align-items:stretch; gap:.7vw; }
+  .step { flex:1; background:#fff; border-radius:22px; padding:2vh 1vw; text-align:center; border:2px solid var(--line); position:relative; }
+  .step b { display:block; font-size:2.4vw; }
+  .step .t { font-weight:900; font-size:1.25vw; margin:.6vh 0; }
+  .step .d { font-size:1vw; color:#6B6F75; }
+  .step.hl { border-color:var(--orange); background:#FFF1E2; }
+  .arrow { align-self:center; font-size:2vw; color:var(--orange); font-weight:900; }
+  .quote { font-size:2.1vw; font-weight:800; line-height:1.35; border-left:10px solid var(--orange); padding-left:2vw; }
+  table { border-collapse:collapse; width:100%; font-size:1.3vw; background:#fff; border-radius:18px; overflow:hidden; }
+  th, td { padding:1.1vh 1vw; text-align:left; border-bottom:1px solid #F6E3CB; }
+  th { background:var(--peach); font-weight:900; }
+  td.n { text-align:right; font-variant-numeric:tabular-nums; }
+  tr.total td { font-weight:900; background:#FFF1E2; }
+  code { background:var(--peach); padding:.1vh .5vw; border-radius:8px; font-size:.95em; }
+  .graph { display:flex; align-items:center; justify-content:center; gap:1.2vw; margin:3vh 0; }
+  .node { padding:2.2vh 1.8vw; border-radius:20px; font-weight:900; font-size:1.6vw; background:#fff; border:3px solid var(--line); }
+  .node.main { border-color:var(--orange); background:#FFF1E2; }
+  .node.tool { border-color:var(--green); background:#EEF5F0; }
+  .node.term { border-radius:999px; background:var(--charcoal); color:#fff; border-color:var(--charcoal); font-size:1.2vw; }
+  .loop { font-size:1.2vw; color:#3F6B4A; font-weight:800; }
+  .footer { position:fixed; bottom:2.2vh; left:7vw; right:7vw; display:flex; justify-content:space-between; font-size:1vw; color:#9A9EA4; font-weight:700; }
+  .bar { position:fixed; left:0; bottom:0; height:6px; background:var(--orange); transition:width .3s; }
+  .q { background:#fff; border-radius:18px; padding:1.4vh 1.2vw; margin:.9vh 0; font-weight:700; font-size:1.4vw; border-left:8px solid var(--orange); }
+  .q span { color:#6B6F75; font-weight:600; font-size:1.1vw; display:block; }
+  ul { margin:.5vh 0; padding-left:1.6vw; }
+</style>
+</head>
+<body>
+
+<!-- 1. Portada -->
+<section class="slide active">
+  <div class="row">
+    <div class="grow">
+      <div class="kicker">Proyecto final · IA Generativa</div>
+      <h1>milo<span>.</span></h1>
+      <p style="font-size:2.4vw;font-weight:800;margin:1.5vh 0 0">AI Nutrition Chef</p>
+      <p class="o" style="font-weight:900;letter-spacing:.2em;text-transform:uppercase;font-size:1.3vw">Eat smart. Cook happy.</p>
+      <p style="margin-top:4vh"><span class="chip">Gemini</span><span class="chip">RAG · ChromaDB</span><span class="chip">LangGraph</span><span class="chip">Memoria</span><span class="chip g">Streamlit</span></p>
+      <p class="small">Daniel García Nilo</p>
+    </div>
+    <img class="mascot" src="../assets/milo_small.png" alt="MILO, la mascota">
+  </div>
+</section>
+
+<!-- 2. Problema -->
+<section class="slide">
+  <div class="kicker">El problema</div>
+  <h2>"¿Qué cocino hoy con lo que tengo… y cuántas calorías tiene?"</h2>
+  <div class="grid g3">
+    <div class="card"><div class="big">🧊</div><p><b>Mi nevera</b><br>Recetas con lo que tengo y lo que me falta</p></div>
+    <div class="card"><div class="big">🧮</div><p><b>Macros reales</b><br>Calorías y proteína calculadas con datos USDA</p></div>
+    <div class="card"><div class="big">📅</div><p><b>Mi semana</b><br>Menú a mis kcal y lista de la compra</p></div>
+    <div class="card"><div class="big">🔁</div><p><b>Sustituciones</b><br>"No tengo aguacate" → alternativa recalculada</p></div>
+    <div class="card"><div class="big">📚</div><p><b>Con fuentes</b><br>Responde con la guía oficial de AESAN y la cita</p></div>
+    <div class="card"><div class="big">🧠</div><p><b>Me recuerda</b><br>"Soy vegetariano" vale para toda la conversación</p></div>
+  </div>
+</section>
+
+<!-- 3. Frase central -->
+<section class="slide">
+  <div class="kicker">La idea que guía todo el proyecto</div>
+  <p class="quote">"Estos son mis <span class="o">tres documentos</span>. Así los <span class="o">divido</span>.
+  Así los convierto en <span class="o">vectores</span>. Aquí los <span class="o">guardo</span>. Cuando pregunto algo,
+  estos son los <span class="o">fragmentos que recupera</span>. Y esta es la <span class="o">respuesta que genera Gemini</span>
+  utilizando esa información."</p>
+  <div class="pipeline" style="margin-top:5vh">
+    <div class="step"><b>📄</b><div class="t">3 documentos</div><div class="d">PDF AESAN + recetario + técnicas</div></div><div class="arrow">→</div>
+    <div class="step"><b>✂️</b><div class="t">Chunking</div><div class="d">75 fragmentos</div></div><div class="arrow">→</div>
+    <div class="step"><b>🔢</b><div class="t">Embeddings</div><div class="d">Gemini · 3072 dim</div></div><div class="arrow">→</div>
+    <div class="step"><b>🗄️</b><div class="t">ChromaDB</div><div class="d">storage/chroma</div></div><div class="arrow">→</div>
+    <div class="step"><b>🔎</b><div class="t">Recuperar</div><div class="d">Top 4 · coseno</div></div><div class="arrow">→</div>
+    <div class="step hl"><b>✨</b><div class="t">Gemini</div><div class="d">Responde y cita [1]</div></div>
+  </div>
+</section>
+
+<!-- 4. Documentos y chunking -->
+<section class="slide">
+  <div class="kicker">Paso 1 y 2 · Documentos y chunking</div>
+  <h2>Mis tres documentos, en 75 fragmentos</h2>
+  <table>
+    <tr><th>Documento</th><th>Qué contiene</th><th class="n">Fragmentos</th><th class="n">Palabras</th></tr>
+    <tr><td><b>Guía AESAN 2022</b> (PDF, 19 págs.)</td><td>Raciones y frecuencias recomendadas, sal, agua, actividad física</td><td class="n">35</td><td class="n">4.147</td></tr>
+    <tr><td><b>Recetario de MILO</b></td><td>28 recetas en gramos, estado de cada ingrediente, pasos, alérgenos</td><td class="n">29</td><td class="n">3.725</td></tr>
+    <tr><td><b>Técnicas y sustituciones</b></td><td>Pesar, cocer, hornear, higiene, temperaturas seguras, sustituir</td><td class="n">11</td><td class="n">1.102</td></tr>
+  </table>
+  <div class="grid g3" style="margin-top:3vh">
+    <div class="card"><b>✂️ Por títulos</b><p class="small">Cada fragmento trata un tema · máx. 400 palabras · 50 de solapamiento</p></div>
+    <div class="card"><b>🧹 Limpieza</b><p class="small">Guiones de final de línea, ligadura "ﬁ" del PDF · sin portada, índice ni contraportada</p></div>
+    <div class="card"><b>🏷️ Procedencia</b><p class="small">Documento, página o sección y hash SHA-256 de cada fuente</p></div>
+  </div>
+</section>
+
+<!-- 5. Embeddings y Chroma -->
+<section class="slide">
+  <div class="kicker">Paso 3, 4 y 5 · Vectores, ChromaDB y recuperación</div>
+  <h2>Busco por significado, no por palabras</h2>
+  <div class="row" style="align-items:stretch">
+    <div class="card grow">
+      <p><b>Pregunta:</b> "¿Cuántos huevos puedo comer a la semana?"</p>
+      <p class="small">↓ gemini-embedding-001 → vector de 3072 números ↓ ChromaDB (distancia coseno)</p>
+      <table>
+        <tr><th>#</th><th>Fragmento recuperado</th><th class="n">Distancia</th></tr>
+        <tr><td>1</td><td><b>AESAN · página 9</b> — "máximo de 4 huevos medianos a la semana"</td><td class="n">0,22</td></tr>
+        <tr><td>2</td><td>AESAN · página 18 — "De un vistazo" (resumen de raciones)</td><td class="n">0,31</td></tr>
+        <tr><td>3</td><td>AESAN · página 10 — "Leche y lácteos con moderación"</td><td class="n">0,32</td></tr>
+      </table>
+    </div>
+    <div class="card" style="width:28vw">
+      <div class="big">75</div><p>vectores en <code>storage/chroma</code></p>
+      <div class="big">3072</div><p>dimensiones por vector</p>
+      <p class="small">Solo se generan los que faltan: reindexar no duplica nada.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 6. RAG vs Python -->
+<section class="slide">
+  <div class="kicker">Decisión de diseño</div>
+  <h2>El RAG busca conocimiento. <span class="o">Python hace las cuentas.</span></h2>
+  <div class="row" style="align-items:flex-start">
+    <table style="flex:1.4">
+      <tr><th>r001 · Bowl de pollo y arroz</th><th class="n">g</th><th class="n">kcal/100 g</th><th class="n">kcal</th><th class="n">Proteína</th></tr>
+      <tr><td>Pechuga de pollo cruda</td><td class="n">160</td><td class="n">112,2</td><td class="n">179,5</td><td class="n">36,0 g</td></tr>
+      <tr><td>Arroz blanco seco</td><td class="n">80</td><td class="n">369,6</td><td class="n">295,7</td><td class="n">5,6 g</td></tr>
+      <tr><td>Tomate roma</td><td class="n">120</td><td class="n">19,0</td><td class="n">22,7</td><td class="n">0,8 g</td></tr>
+      <tr><td>Aceite de oliva</td><td class="n">10</td><td class="n">884,0</td><td class="n">88,4</td><td class="n">0 g</td></tr>
+      <tr class="total"><td>Total por ración</td><td></td><td></td><td class="n">586</td><td class="n">42,5 g</td></tr>
+    </table>
+    <div class="card" style="flex:1">
+      <p><b>70 alimentos USDA</b> · valores por 100 g</p>
+      <p><b>28 recetas</b> · todas verificadas</p>
+      <p class="small">Crudo ≠ cocinado · un dato ausente no es 0 · dieta, alergias y "no me gusta" los filtra Python</p>
+      <p class="small">El catálogo se regenera idéntico byte a byte desde los ZIP oficiales.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 7. LangGraph -->
+<section class="slide">
+  <div class="kicker">El agente</div>
+  <h2>LangGraph: tres nodos y ocho herramientas</h2>
+  <div class="graph">
+    <div class="node term">START</div><div class="arrow">→</div>
+    <div class="node">🔎 recuperar<br><span class="small">ChromaDB</span></div><div class="arrow">→</div>
+    <div class="node main">✨ milo<br><span class="small">Gemini</span></div>
+    <div class="arrow">⇄</div>
+    <div class="node tool">🧮 herramientas<br><span class="small">Python</span></div>
+    <div class="arrow">→</div><div class="node term">END</div>
+  </div>
+  <p style="text-align:center">
+    <span class="chip">buscar_recetas</span><span class="chip">ver_receta</span><span class="chip">sustituir_ingrediente</span>
+    <span class="chip">calcular_plato</span><span class="chip">plan_semanal</span><span class="chip">lista_compra</span>
+    <span class="chip g">guardar_perfil</span><span class="chip g">buscar_documentos</span>
+  </p>
+  <p class="small" style="text-align:center">RAG en cada turno · Gemini decide la herramienta · si una falla, el error vuelve a Gemini · modelo de respaldo ante un 503</p>
+</section>
+
+<!-- 8. System prompt -->
+<section class="slide">
+  <div class="kicker">Ingeniería de prompts · <code>src/milo/prompts/system.md</code></div>
+  <h2>Un system prompt pensado y probado</h2>
+  <div class="grid g3">
+    <div class="card"><b>👨‍🍳 Rol</b><p class="small">Chef digital de cocina y nutrición general. No es médico.</p></div>
+    <div class="card"><b>😄 Personalidad</b><p class="small">Cercano y bromista; serio con los números; responde en el idioma del usuario.</p></div>
+    <div class="card"><b>📚 RAG</b><p class="small">Usar los fragmentos, citar [n], decir "mis documentos no tratan eso".</p></div>
+    <div class="card"><b>🧮 Herramientas</b><p class="small">Cifras siempre de Python; qué herramienta para cada petición.</p></div>
+    <div class="card"><b>🧠 Memoria</b><p class="small">"La receta anterior" y el perfil se respetan en cada turno.</p></div>
+    <div class="card"><b>🛡️ Seguridad</b><p class="small">No diagnostica · alergias en serio · lactosa ≠ alergia a la leche.</p></div>
+  </div>
+  <p class="small" style="margin-top:2.5vh">Iteraciones reales: Gemini citaba un fragmento de salmón en una receta de huevos → "las cifras de herramientas no se citan".
+  Copiaba literalmente la frase de ejemplo del tono → la quité.</p>
+</section>
+
+<!-- 9. Memoria -->
+<section class="slide">
+  <div class="kicker">Memoria conversacional</div>
+  <h2>MILO se acuerda (incluso tras reiniciar)</h2>
+  <div class="row" style="align-items:stretch">
+    <div class="grow">
+      <div class="q">"Soy vegetariano y no me gusta el tomate." <span>→ guardar_perfil</span></div>
+      <div class="q">"Recomiéndame una cena de unas 700 kcal." <span>→ receta vegana escalada a 700 kcal, sin tomate</span></div>
+      <div class="q">"Hazme la receta anterior para 2 personas." <span>→ sabe cuál era y duplica cantidades</span></div>
+      <div class="q">Agente nuevo: "¿Qué te dije sobre mi dieta?" <span>→ "Vegetariano y sin tomate"</span></div>
+    </div>
+    <div class="card" style="width:26vw">
+      <p><b>SqliteSaver</b> de LangGraph</p>
+      <p class="small"><code>storage/memoria.sqlite</code></p>
+      <p><b>thread_id</b> por conversación</p>
+      <p class="small">Conversaciones aisladas · en la app, una por navegador</p>
+      <p><b>8 turnos</b> enviados a Gemini</p>
+      <p class="small">El resto sigue guardado</p>
+    </div>
+  </div>
+</section>
+
+<!-- 10. Demo -->
+<section class="slide">
+  <div class="kicker">Demo en vivo · <code>streamlit run app.py</code></div>
+  <h2>Vamos a cocinar 🍳</h2>
+  <div class="grid g2">
+    <div>
+      <div class="q">¿Qué recomienda la documentación sobre una alimentación equilibrada? <span>RAG + citas · ver fragmentos de ChromaDB</span></div>
+      <div class="q">Tengo pollo, arroz, aguacate y huevos. Cena de 800 kcal con proteína. <span>Herramientas · ficha calculada por Python</span></div>
+      <div class="q">Soy vegetariano y no me gusta el tomate → ¿Qué ceno hoy? <span>Memoria de perfil</span></div>
+    </div>
+    <div>
+      <div class="q">Menú de 3 días de 2.500 kcal → Lista de la compra <span>Planificación + memoria de contexto</span></div>
+      <div class="q">🧊 Mi nevera · 📅 Plan semanal · 👤 Mi perfil <span>Funcionan sin IA: instantáneos</span></div>
+      <div class="q">Plan B <span>Notebook ya ejecutado con todas las salidas reales</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 11. Verificación -->
+<section class="slide">
+  <div class="kicker">Calidad y límites</div>
+  <h2>Comprobado, no supuesto</h2>
+  <div class="grid g4">
+    <div class="card"><div class="big">92</div><p class="small">pruebas automáticas sin API</p></div>
+    <div class="card"><div class="big">+6</div><p class="small">pruebas con Gemini real (RAG, citas y memoria)</p></div>
+    <div class="card"><div class="big">0</div><p class="small">errores al ejecutar el notebook completo</p></div>
+    <div class="card"><div class="big">28/28</div><p class="small">recetas validadas por Python</p></div>
+  </div>
+  <div class="grid g2" style="margin-top:3vh">
+    <div class="card"><b>Limitaciones</b><ul class="small"><li>70 alimentos y 28 recetas</li><li>Macros estimados, sin pérdidas de cocción</li><li>Menú por escalado, no dieta clínica</li><li>Depende de la API de Gemini</li></ul></div>
+    <div class="card"><b>Mejoras</b><ul class="small"><li>Más alimentos y recetas</li><li>Búsqueda híbrida (palabras + vectores)</li><li>Evaluación del RAG con preguntas de referencia</li><li>Recetas propias del usuario</li></ul></div>
+  </div>
+</section>
+
+<!-- 12. Cierre -->
+<section class="slide">
+  <div class="row">
+    <img class="mascot" src="../assets/milo_small.png" alt="MILO">
+    <div class="grow">
+      <h1>¡Gracias<span>!</span></h1>
+      <p style="font-size:2vw;font-weight:800">¿Preguntas? MILO también tiene hambre de ellas.</p>
+      <p class="small">Notebook: MILO_Proyecto_Final.ipynb · App: streamlit run app.py · Manual: MANUAL_DEL_PROYECTO.md</p>
+    </div>
+  </div>
+</section>
+
+<div class="footer"><span>milo<span class="o">.</span> — AI Nutrition Chef</span><span id="count"></span></div>
+<div class="bar" id="bar"></div>
+<script>
+  const slides = [...document.querySelectorAll('.slide')];
+  let i = 0;
+  function show(n) {
+    i = Math.max(0, Math.min(slides.length - 1, n));
+    slides.forEach((s, k) => s.classList.toggle('active', k === i));
+    document.getElementById('count').textContent = (i + 1) + ' / ' + slides.length;
+    document.getElementById('bar').style.width = ((i + 1) / slides.length * 100) + '%';
+  }
+  document.addEventListener('keydown', e => {
+    if (['ArrowRight', 'PageDown', ' ', 'Enter'].includes(e.key)) show(i + 1);
+    if (['ArrowLeft', 'PageUp', 'Backspace'].includes(e.key)) show(i - 1);
+    if (e.key === 'Home') show(0);
+    if (e.key === 'End') show(slides.length - 1);
+  });
+  document.addEventListener('click', e => show(e.clientX > innerWidth / 3 ? i + 1 : i - 1));
+  show(0);
+</script>
+</body>
+</html>

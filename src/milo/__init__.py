@@ -1,3 +1,3 @@
-"""MILO: cocina y nutrición general con cálculos trazables."""
+"""MILO — AI Nutrition Chef: cocina y nutrición con Gemini, RAG (ChromaDB) y LangGraph."""
 
-__version__ = "0.1.0"
+__version__ = "1.0.0"

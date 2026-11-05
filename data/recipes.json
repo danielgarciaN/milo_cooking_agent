@@ -1,0 +1,1625 @@
+[
+  {
+    "recipe_id": "r001",
+    "title": "Bowl de pollo y arroz",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "Pechuga de pollo sin piel ni hueso, cruda",
+        "food_id": "fdc_2646170",
+        "grams": "160",
+        "unit": "g",
+        "state": "raw",
+        "notes": "Borrador: pollo pechuga. Peso en estado raw."
+      },
+      {
+        "ingredient_name": "Arroz blanco de grano largo sin enriquecer, seco",
+        "food_id": "fdc_2512381",
+        "grams": "80",
+        "unit": "g",
+        "state": "dry",
+        "notes": "Borrador: arroz. Peso en estado dry."
+      },
+      {
+        "ingredient_name": "Tomate roma, crudo",
+        "food_id": "fdc_1999634",
+        "grams": "120",
+        "unit": "g",
+        "state": "raw",
+        "notes": "Borrador: tomate. Peso en estado raw."
+      },
+      {
+        "ingredient_name": "Aceite de oliva para ensalada o cocina (genérico USDA SR)",
+        "food_id": "fdc_171413",
+        "grams": "10",
+        "unit": "g",
+        "state": "ready_to_eat",
+        "notes": "Borrador: aceite de oliva. Peso en estado ready_to_eat."
+      }
+    ],
+    "steps": [
+      "Pesar el arroz en seco y la pechuga cruda, sin piel ni hueso. Lavar y cortar el tomate.",
+      "Cocer el arroz en agua siguiendo el tiempo del envase; escurrir si sobra agua.",
+      "Cortar el pollo en tiras. Calentar el aceite medido en una sartén y cocinar el pollo hasta alcanzar 74 °C en el centro, medidos con termómetro.",
+      "Servir el arroz con el pollo y el tomate. Incorporar el aceite y jugos de la sartén que se vayan a consumir."
+    ],
+    "time_minutes_estimate": 20,
+    "difficulty": "fácil",
+    "tags": [
+      "comida",
+      "cena"
+    ],
+    "allergens": [],
+    "review_status": "verified",
+    "notes": [
+      "Adaptación editorial MILO de un borrador del usuario, no receta oficial USDA.",
+      "Pesos de porción comestible; sin conversión automática crudo/cocinado.",
+      "Nutrición estimada por suma de ingredientes, sin retención ni rendimiento de cocción.",
+      "Aceite de oliva genérico SR Legacy 171413; no se imputan los datos al AOVE Foundation 748608."
+    ]
+  },
+  {
+    "recipe_id": "r002",
+    "title": "Tortilla de espinacas",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "Huevo entero grande, crudo, sin cáscara",
+        "food_id": "fdc_748967",
+        "grams": "120",
+        "unit": "g",
+        "state": "raw",
+        "notes": "Borrador: huevo entero. Peso en estado raw."
+      },
+      {
+        "ingredient_name": "Espinaca baby, cruda",
+        "food_id": "fdc_1999632",
+        "grams": "80",
+        "unit": "g",
+        "state": "raw",
+        "notes": "Borrador: espinacas. Peso en estado raw."
+      },
+      {
+        "ingredient_name": "Aceite de oliva para ensalada o cocina (genérico USDA SR)",
+        "food_id": "fdc_171413",
+        "grams": "8",
+        "unit": "g",
+        "state": "ready_to_eat",
+        "notes": "Borrador: aceite de oliva. Peso en estado ready_to_eat."
+      }
+    ],
+    "steps": [
+      "Pesar el huevo sin cáscara. Lavar las espinacas y secarlas.",
+      "Calentar el aceite medido en una sartén antiadherente y saltear las espinacas hasta que pierdan volumen.",
+      "Batir el huevo, añadirlo y cuajar la tortilla por ambos lados; comprobar 71 °C en el centro.",
+      "Servir la tortilla completa como una ración."
+    ],
+    "time_minutes_estimate": 15,
+    "difficulty": "fácil",
+    "tags": [
+      "cena"
+    ],
+    "allergens": [
+      "egg"
+    ],
+    "review_status": "verified",
+    "notes": [
+      "Adaptación editorial MILO de un borrador del usuario, no receta oficial USDA.",
+      "Pesos de porción comestible; sin conversión automática crudo/cocinado.",
+      "Nutrición estimada por suma de ingredientes, sin retención ni rendimiento de cocción.",
+      "Aceite de oliva genérico SR Legacy 171413; no se imputan los datos al AOVE Foundation 748608."
+    ]
+  },
+  {
+    "recipe_id": "r003",
+    "title": "Avena con yogur y plátano",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "Copos de avena integral tradicionales, secos",
+        "food_id": "fdc_2346396",
+        "grams": "65",
+        "unit": "g",
+        "state": "dry",
+        "notes": "Borrador: avena. Peso en estado dry."
+      },
+      {
+        "ingredient_name": "Yogur natural de leche entera",
+        "food_id": "fdc_2259793",
+        "grams": "180",
+        "unit": "g",
+        "state": "ready_to_eat",
+        "notes": "Borrador: yogur natural. Peso en estado ready_to_eat."
+      },
+      {
+        "ingredient_name": "Plátano maduro o ligeramente maduro, crudo",
+        "food_id": "fdc_1105314",
+        "grams": "120",
+        "unit": "g",
+        "state": "raw",
+        "notes": "Borrador: plátano. Peso en estado raw."
+      }
+    ],
+    "steps": [
+      "Pesar el plátano pelado y cortarlo en rodajas.",
+      "Mezclar los copos de avena aptos para consumo sin cocción con el yogur; si el envase exige cocción, cocerlos antes en agua y dejar templar.",
+      "Añadir el plátano y servir. El agua de cocción no cambia los gramos de avena seca contabilizados."
+    ],
+    "time_minutes_estimate": 5,
+    "difficulty": "fácil",
+    "tags": [
+      "desayuno"
+    ],
+    "allergens": [
+      "gluten",
+      "milk"
+    ],
+    "review_status": "verified",
+    "notes": [
+      "Adaptación editorial MILO de un borrador del usuario, no receta oficial USDA.",
+      "Pesos de porción comestible; sin conversión automática crudo/cocinado.",
+      "Nutrición estimada por suma de ingredientes, sin retención ni rendimiento de cocción."
+    ]
+  },
+  {
+    "recipe_id": "r004",
+    "title": "Pasta con atún y tomate",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "Espaguetis enriquecidos, secos",
+        "food_id": "fdc_2758998",
+        "grams": "90",
+        "unit": "g",
+        "state": "dry",
+        "notes": "Borrador: pasta seca. Peso en estado dry."
+      },
+      {
+        "ingredient_name": "Atún claro al natural en conserva, escurrido",
+        "food_id": "fdc_334194",
+        "grams": "120",
+        "unit": "g",
+        "state": "drained",
+        "notes": "Borrador: atún al natural escurrido. Peso en estado drained."
+      },
+      {
+        "ingredient_name": "Tomate triturado en conserva",
+        "food_id": "fdc_2685581",
+        "grams": "150",
+        "unit": "g",
+        "state": "ready_to_eat",
+        "notes": "Borrador: tomate triturado. Peso en estado ready_to_eat."
+      },
+      {
+        "ingredient_name": "Aceite de oliva para ensalada o cocina (genérico USDA SR)",
+        "food_id": "fdc_171413",
+        "grams": "8",
+        "unit": "g",
+        "state": "ready_to_eat",
+        "notes": "Borrador: aceite de oliva. Peso en estado ready_to_eat."
+      }
+    ],
+    "steps": [
+      "Pesar los espaguetis secos. Escurrir el atún y pesar solo los sólidos.",
+      "Cocer la pasta en agua según el envase. Calentar el aceite y cocinar el tomate triturado durante unos 8 minutos a fuego medio.",
+      "Añadir el atún y calentar la salsa. Mezclar con la pasta escurrida y servir."
+    ],
+    "time_minutes_estimate": 20,
+    "difficulty": "fácil",
+    "tags": [
+      "comida"
+    ],
+    "allergens": [
+      "fish",
+      "gluten",
+      "wheat"
+    ],
+    "review_status": "verified",
+    "notes": [
+      "Adaptación editorial MILO de un borrador del usuario, no receta oficial USDA.",
+      "Pesos de porción comestible; sin conversión automática crudo/cocinado.",
+      "Nutrición estimada por suma de ingredientes, sin retención ni rendimiento de cocción.",
+      "Aceite de oliva genérico SR Legacy 171413; no se imputan los datos al AOVE Foundation 748608."
+    ]
+  },
+  {
+    "recipe_id": "r005",
+    "title": "Ensalada de garbanzos",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "Garbanzo en conserva con sal, escurrido y enjuagado",
+        "food_id": "fdc_2644288",
+        "grams": "200",
+        "unit": "g",
+        "state": "drained",
+        "notes": "Borrador: garbanzo cocido escurrido. Peso en estado drained."
+      },
+      {
+        "ingredient_name": "Pepino con piel, crudo",
+        "food_id": "fdc_2346406",
+        "grams": "100",
+        "unit": "g",
+        "state": "raw",
+        "notes": "Borrador: pepino. Peso en estado raw."
+      },
+      {
+        "ingredient_name": "Tomate roma, crudo",
+        "food_id": "fdc_1999634",
+        "grams": "100",
+        "unit": "g",
+        "state": "raw",
+        "notes": "Borrador: tomate. Peso en estado raw."
+      },
+      {
+        "ingredient_name": "Aceite de oliva para ensalada o cocina (genérico USDA SR)",
+        "food_id": "fdc_171413",
+        "grams": "12",
+        "unit": "g",
+        "state": "ready_to_eat",
+        "notes": "Borrador: aceite de oliva. Peso en estado ready_to_eat."
+      }
+    ],
+    "steps": [
+      "Utilizar garbanzos en conserva listos para consumir; enjuagarlos, escurrirlos y pesar 200 g de sólidos.",
+      "Lavar el pepino y el tomate y cortarlos en dados, manteniendo la piel del pepino.",
+      "Mezclar las verduras con los garbanzos y el aceite pesado. Servir frío."
+    ],
+    "time_minutes_estimate": 10,
+    "difficulty": "fácil",
+    "tags": [
+      "comida",
+      "cena"
+    ],
+    "allergens": [],
+    "review_status": "verified",
+    "notes": [
+      "Adaptación editorial MILO de un borrador del usuario, no receta oficial USDA.",
+      "Pesos de porción comestible; sin conversión automática crudo/cocinado.",
+      "Nutrición estimada por suma de ingredientes, sin retención ni rendimiento de cocción.",
+      "Aceite de oliva genérico SR Legacy 171413; no se imputan los datos al AOVE Foundation 748608."
+    ]
+  },
+  {
+    "recipe_id": "r006",
+    "title": "Salmón al horno con patata",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "Salmón atlántico de cultivo, crudo",
+        "food_id": "fdc_2684441",
+        "grams": "160",
+        "unit": "g",
+        "state": "raw",
+        "notes": "Borrador: salmón. Peso en estado raw."
+      },
+      {
+        "ingredient_name": "Patata russet sin piel, cruda",
+        "food_id": "fdc_2346401",
+        "grams": "220",
+        "unit": "g",
+        "state": "raw",
+        "notes": "Borrador: patata. Peso en estado raw."
+      },
+      {
+        "ingredient_name": "Brócoli, crudo",
+        "food_id": "fdc_747447",
+        "grams": "150",
+        "unit": "g",
+        "state": "raw",
+        "notes": "Borrador: brócoli. Peso en estado raw."
+      },
+      {
+        "ingredient_name": "Aceite de oliva para ensalada o cocina (genérico USDA SR)",
+        "food_id": "fdc_171413",
+        "grams": "8",
+        "unit": "g",
+        "state": "ready_to_eat",
+        "notes": "Borrador: aceite de oliva. Peso en estado ready_to_eat."
+      }
+    ],
+    "steps": [
+      "Precalentar el horno a 200 °C. Pesar la patata pelada cruda, el brócoli limpio y el salmón crudo comestible.",
+      "Cortar la patata en láminas finas, repartir parte del aceite y hornear unos 20 minutos.",
+      "Añadir el brócoli en ramilletes y el salmón con el aceite restante; continuar hasta que la patata esté tierna y el pescado alcance 63 °C en el centro.",
+      "Servir todo como una ración. El tiempo es orientativo y depende del grosor; comprobar con termómetro."
+    ],
+    "time_minutes_estimate": 40,
+    "difficulty": "media",
+    "tags": [
+      "comida",
+      "cena"
+    ],
+    "allergens": [
+      "fish"
+    ],
+    "review_status": "verified",
+    "notes": [
+      "Adaptación editorial MILO de un borrador del usuario, no receta oficial USDA.",
+      "Pesos de porción comestible; sin conversión automática crudo/cocinado.",
+      "Nutrición estimada por suma de ingredientes, sin retención ni rendimiento de cocción.",
+      "Aceite de oliva genérico SR Legacy 171413; no se imputan los datos al AOVE Foundation 748608."
+    ]
+  },
+  {
+    "recipe_id": "r007",
+    "title": "Tostadas de aguacate y huevo",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "Pan comercial 100% integral de trigo",
+        "food_id": "fdc_2758994",
+        "grams": "90",
+        "unit": "g",
+        "state": "ready_to_eat",
+        "notes": "Borrador: pan integral. Peso en estado ready_to_eat."
+      },
+      {
+        "ingredient_name": "Aguacate Hass pelado, crudo",
+        "food_id": "fdc_2710824",
+        "grams": "80",
+        "unit": "g",
+        "state": "raw",
+        "notes": "Borrador: aguacate. Peso en estado raw."
+      },
+      {
+        "ingredient_name": "Huevo entero grande, crudo, sin cáscara",
+        "food_id": "fdc_748967",
+        "grams": "120",
+        "unit": "g",
+        "state": "raw",
+        "notes": "Borrador: huevo entero. Peso en estado raw."
+      }
+    ],
+    "steps": [
+      "Pesar el pan antes de tostarlo y el aguacate pelado sin hueso.",
+      "Pesar el huevo sin cáscara y cuajarlo en una sartén antiadherente sin aceite añadido, hasta 71 °C en el centro.",
+      "Tostar el pan, repartir el aguacate machacado y colocar el huevo encima."
+    ],
+    "time_minutes_estimate": 15,
+    "difficulty": "fácil",
+    "tags": [
+      "desayuno",
+      "cena"
+    ],
+    "allergens": [
+      "egg",
+      "gluten",
+      "wheat"
+    ],
+    "review_status": "verified",
+    "notes": [
+      "Adaptación editorial MILO de un borrador del usuario, no receta oficial USDA.",
+      "Pesos de porción comestible; sin conversión automática crudo/cocinado.",
+      "Nutrición estimada por suma de ingredientes, sin retención ni rendimiento de cocción."
+    ]
+  },
+  {
+    "recipe_id": "r008",
+    "title": "Lentejas con verduras",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "Lentejas cocidas, hervidas sin sal",
+        "food_id": "fdc_172421",
+        "grams": "250",
+        "unit": "g",
+        "state": "cooked",
+        "notes": "Borrador: lentejas cocidas. Peso en estado cooked."
+      },
+      {
+        "ingredient_name": "Zanahoria madura, cruda",
+        "food_id": "fdc_2258586",
+        "grams": "90",
+        "unit": "g",
+        "state": "raw",
+        "notes": "Borrador: zanahoria. Peso en estado raw."
+      },
+      {
+        "ingredient_name": "Cebolla amarilla, cruda",
+        "food_id": "fdc_790646",
+        "grams": "80",
+        "unit": "g",
+        "state": "raw",
+        "notes": "Borrador: cebolla. Peso en estado raw."
+      },
+      {
+        "ingredient_name": "Aceite de oliva para ensalada o cocina (genérico USDA SR)",
+        "food_id": "fdc_171413",
+        "grams": "10",
+        "unit": "g",
+        "state": "ready_to_eat",
+        "notes": "Borrador: aceite de oliva. Peso en estado ready_to_eat."
+      }
+    ],
+    "steps": [
+      "Usar lentejas previamente hervidas sin sal y pesar 250 g cocidos, sin exceso de agua libre; no sustituir por 250 g secos.",
+      "Pelar y picar la cebolla y la zanahoria. Rehogarlas con el aceite medido a fuego medio.",
+      "Añadir agua en pequeñas cantidades y cocinar hasta que la zanahoria esté tierna. Incorporar las lentejas, calentar y servir con el líquido del guiso."
+    ],
+    "time_minutes_estimate": 30,
+    "difficulty": "fácil",
+    "tags": [
+      "comida"
+    ],
+    "allergens": [],
+    "review_status": "verified",
+    "notes": [
+      "Adaptación editorial MILO de un borrador del usuario, no receta oficial USDA.",
+      "Pesos de porción comestible; sin conversión automática crudo/cocinado.",
+      "Nutrición estimada por suma de ingredientes, sin retención ni rendimiento de cocción.",
+      "Aceite de oliva genérico SR Legacy 171413; no se imputan los datos al AOVE Foundation 748608."
+    ]
+  },
+  {
+    "recipe_id": "r009",
+    "title": "Wrap de pavo",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "Tortilla comercial de harina de trigo",
+        "food_id": "fdc_2758996",
+        "grams": "80",
+        "unit": "g",
+        "state": "ready_to_eat",
+        "notes": "Borrador: tortilla de trigo. Peso en estado ready_to_eat."
+      },
+      {
+        "ingredient_name": "Pavo picado 93% magro, cocinado en sartén",
+        "food_id": "fdc_746785",
+        "grams": "140",
+        "unit": "g",
+        "state": "cooked",
+        "notes": "Borrador: pavo cocinado. Peso en estado cooked."
+      },
+      {
+        "ingredient_name": "Lechuga romana verde, cruda",
+        "food_id": "fdc_2346389",
+        "grams": "50",
+        "unit": "g",
+        "state": "raw",
+        "notes": "Borrador: lechuga. Peso en estado raw."
+      },
+      {
+        "ingredient_name": "Tomate roma, crudo",
+        "food_id": "fdc_1999634",
+        "grams": "70",
+        "unit": "g",
+        "state": "raw",
+        "notes": "Borrador: tomate. Peso en estado raw."
+      }
+    ],
+    "steps": [
+      "Esta versión utiliza pavo picado 93% magro ya cocinado en sartén; pesar 140 g después de cocinar. Si se parte de crudo, cocinar hasta 74 °C y pesar después, sin estimar rendimiento.",
+      "Lavar y cortar la lechuga y el tomate. Calentar la tortilla de trigo siguiendo el envase.",
+      "Repartir el pavo, la lechuga y el tomate sobre la tortilla y enrollarla. No añadir salsas no contabilizadas."
+    ],
+    "time_minutes_estimate": 10,
+    "difficulty": "fácil",
+    "tags": [
+      "comida",
+      "cena"
+    ],
+    "allergens": [
+      "gluten",
+      "wheat"
+    ],
+    "review_status": "verified",
+    "notes": [
+      "Adaptación editorial MILO de un borrador del usuario, no receta oficial USDA.",
+      "Pesos de porción comestible; sin conversión automática crudo/cocinado.",
+      "Nutrición estimada por suma de ingredientes, sin retención ni rendimiento de cocción.",
+      "Pavo cocinado concretado en pavo picado, no fiambre ni pechuga; modificación editorial explícita."
+    ]
+  },
+  {
+    "recipe_id": "r010",
+    "title": "Revuelto de champiñones",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "Huevo entero grande, crudo, sin cáscara",
+        "food_id": "fdc_748967",
+        "grams": "120",
+        "unit": "g",
+        "state": "raw",
+        "notes": "Borrador: huevo entero. Peso en estado raw."
+      },
+      {
+        "ingredient_name": "Champiñón blanco, crudo",
+        "food_id": "fdc_1999629",
+        "grams": "180",
+        "unit": "g",
+        "state": "raw",
+        "notes": "Borrador: champiñones. Peso en estado raw."
+      },
+      {
+        "ingredient_name": "Aceite de oliva para ensalada o cocina (genérico USDA SR)",
+        "food_id": "fdc_171413",
+        "grams": "8",
+        "unit": "g",
+        "state": "ready_to_eat",
+        "notes": "Borrador: aceite de oliva. Peso en estado ready_to_eat."
+      }
+    ],
+    "steps": [
+      "Limpiar los champiñones y laminarlos. Pesar los huevos sin cáscara y batirlos.",
+      "Calentar el aceite medido, añadir los champiñones y saltear hasta que reduzcan su agua.",
+      "Añadir el huevo y remover a fuego medio hasta que el revuelto alcance 71 °C; servir."
+    ],
+    "time_minutes_estimate": 12,
+    "difficulty": "fácil",
+    "tags": [
+      "cena"
+    ],
+    "allergens": [
+      "egg"
+    ],
+    "review_status": "verified",
+    "notes": [
+      "Adaptación editorial MILO de un borrador del usuario, no receta oficial USDA.",
+      "Pesos de porción comestible; sin conversión automática crudo/cocinado.",
+      "Nutrición estimada por suma de ingredientes, sin retención ni rendimiento de cocción.",
+      "Aceite de oliva genérico SR Legacy 171413; no se imputan los datos al AOVE Foundation 748608."
+    ]
+  },
+  {
+    "recipe_id": "r011",
+    "title": "Arroz con tofu y verduras",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "Arroz blanco de grano largo sin enriquecer, seco",
+        "food_id": "fdc_2512381",
+        "grams": "80",
+        "unit": "g",
+        "state": "dry",
+        "notes": "Borrador: arroz. Peso en estado dry."
+      },
+      {
+        "ingredient_name": "Tofu firme con sulfato cálcico, crudo",
+        "food_id": "fdc_172475",
+        "grams": "180",
+        "unit": "g",
+        "state": "raw",
+        "notes": "Borrador: tofu firme. Peso en estado raw."
+      },
+      {
+        "ingredient_name": "Calabacín verde con piel, crudo",
+        "food_id": "fdc_2685568",
+        "grams": "120",
+        "unit": "g",
+        "state": "raw",
+        "notes": "Borrador: calabacín. Peso en estado raw."
+      },
+      {
+        "ingredient_name": "Zanahoria madura, cruda",
+        "food_id": "fdc_2258586",
+        "grams": "80",
+        "unit": "g",
+        "state": "raw",
+        "notes": "Borrador: zanahoria. Peso en estado raw."
+      },
+      {
+        "ingredient_name": "Aceite de oliva para ensalada o cocina (genérico USDA SR)",
+        "food_id": "fdc_171413",
+        "grams": "8",
+        "unit": "g",
+        "state": "ready_to_eat",
+        "notes": "Borrador: aceite de oliva. Peso en estado ready_to_eat."
+      }
+    ],
+    "steps": [
+      "Pesar el arroz seco y el tofu firme con sulfato cálcico tal como se consume, sin líquido libre ni prensado adicional. Lavar y cortar las verduras.",
+      "Cocer el arroz en agua según el envase. Cortar el tofu en dados.",
+      "Calentar el aceite medido y saltear la zanahoria en tiras finas y el calabacín. Añadir el tofu y cocinar según las instrucciones de su envase.",
+      "Mezclar con el arroz cocido y servir. No se han incluido salsa de soja ni otros condimentos energéticos."
+    ],
+    "time_minutes_estimate": 25,
+    "difficulty": "media",
+    "tags": [
+      "comida",
+      "cena"
+    ],
+    "allergens": [
+      "soy"
+    ],
+    "review_status": "verified",
+    "notes": [
+      "Adaptación editorial MILO de un borrador del usuario, no receta oficial USDA.",
+      "Pesos de porción comestible; sin conversión automática crudo/cocinado.",
+      "Nutrición estimada por suma de ingredientes, sin retención ni rendimiento de cocción.",
+      "Aceite de oliva genérico SR Legacy 171413; no se imputan los datos al AOVE Foundation 748608."
+    ]
+  },
+  {
+    "recipe_id": "r012",
+    "title": "Yogur con frutos rojos y nueces",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "Yogur natural de leche entera",
+        "food_id": "fdc_2259793",
+        "grams": "200",
+        "unit": "g",
+        "state": "ready_to_eat",
+        "notes": "Borrador: yogur natural. Peso en estado ready_to_eat."
+      },
+      {
+        "ingredient_name": "Fresa, cruda",
+        "food_id": "fdc_2346409",
+        "grams": "50",
+        "unit": "g",
+        "state": "raw",
+        "notes": "Mezcla editorial 50/50 explícita."
+      },
+      {
+        "ingredient_name": "Frambuesa, cruda",
+        "food_id": "fdc_2346410",
+        "grams": "50",
+        "unit": "g",
+        "state": "raw",
+        "notes": "Mezcla editorial 50/50 explícita."
+      },
+      {
+        "ingredient_name": "Nuez inglesa sin cáscara, cruda",
+        "food_id": "fdc_2346394",
+        "grams": "25",
+        "unit": "g",
+        "state": "raw",
+        "notes": "Borrador: nueces. Peso en estado raw."
+      }
+    ],
+    "steps": [
+      "Esta versión concreta los frutos rojos del borrador en 50 g de fresas y 50 g de frambuesas; no presupone una mezcla comercial.",
+      "Lavar las frutas, retirar partes no comestibles y pesar las cantidades indicadas. Trocear las fresas.",
+      "Servir el yogur con la fruta y 25 g de nueces sin cáscara, troceadas."
+    ],
+    "time_minutes_estimate": 5,
+    "difficulty": "fácil",
+    "tags": [
+      "desayuno",
+      "snack"
+    ],
+    "allergens": [
+      "milk",
+      "tree_nuts"
+    ],
+    "review_status": "verified",
+    "notes": [
+      "Adaptación editorial MILO de un borrador del usuario, no receta oficial USDA.",
+      "Pesos de porción comestible; sin conversión automática crudo/cocinado.",
+      "Nutrición estimada por suma de ingredientes, sin retención ni rendimiento de cocción.",
+      "Frutos rojos concretados en fresas y frambuesas; no equivalencia para otras mezclas."
+    ]
+  },
+  {
+    "recipe_id": "r013",
+    "title": "Tostada integral con tomate y aceite",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "Pan comercial 100% integral de trigo",
+        "food_id": "fdc_2758994",
+        "grams": "70",
+        "unit": "g",
+        "state": "ready_to_eat",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Tomate roma, crudo",
+        "food_id": "fdc_1999634",
+        "grams": "100",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Aceite de oliva para ensalada o cocina (genérico USDA SR)",
+        "food_id": "fdc_171413",
+        "grams": "8",
+        "unit": "g",
+        "state": "ready_to_eat",
+        "notes": ""
+      }
+    ],
+    "steps": [
+      "Pesar el pan y tostarlo.",
+      "Lavar el tomate, rallarlo o machacarlo y repartirlo sobre el pan.",
+      "Añadir el aceite medido por encima y servir."
+    ],
+    "time_minutes_estimate": 5,
+    "difficulty": "fácil",
+    "tags": [
+      "desayuno"
+    ],
+    "allergens": [
+      "gluten",
+      "wheat"
+    ],
+    "review_status": "verified",
+    "notes": [
+      "Receta propia de MILO para el proyecto, no receta oficial USDA.",
+      "Pesos de porción comestible; sin conversión automática crudo/cocinado.",
+      "Nutrición estimada por suma de ingredientes, sin retención ni rendimiento de cocción."
+    ]
+  },
+  {
+    "recipe_id": "r014",
+    "title": "Bacalao al horno con patata y pimiento",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "Bacalao atlántico salvaje, crudo",
+        "food_id": "fdc_2684444",
+        "grams": "180",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Patata russet sin piel, cruda",
+        "food_id": "fdc_2346401",
+        "grams": "200",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Pimiento rojo, crudo",
+        "food_id": "fdc_2258590",
+        "grams": "100",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Cebolla amarilla, cruda",
+        "food_id": "fdc_790646",
+        "grams": "60",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Aceite de oliva para ensalada o cocina (genérico USDA SR)",
+        "food_id": "fdc_171413",
+        "grams": "10",
+        "unit": "g",
+        "state": "ready_to_eat",
+        "notes": ""
+      }
+    ],
+    "steps": [
+      "Precalentar el horno a 200 °C. Pesar la patata pelada, el pimiento y la cebolla limpios y el bacalao crudo.",
+      "Cortar la patata en rodajas finas y las verduras en tiras. Hornearlas con parte del aceite unos 20 minutos.",
+      "Colocar el bacalao encima con el resto del aceite y hornear hasta que el centro alcance 63 °C, medido con termómetro.",
+      "Servir todo como una ración. El tiempo es orientativo y depende del grosor de la pieza."
+    ],
+    "time_minutes_estimate": 40,
+    "difficulty": "media",
+    "tags": [
+      "comida",
+      "cena"
+    ],
+    "allergens": [
+      "fish"
+    ],
+    "review_status": "verified",
+    "notes": [
+      "Receta propia de MILO para el proyecto, no receta oficial USDA.",
+      "Pesos de porción comestible; sin conversión automática crudo/cocinado.",
+      "Nutrición estimada por suma de ingredientes, sin retención ni rendimiento de cocción."
+    ]
+  },
+  {
+    "recipe_id": "r015",
+    "title": "Ensalada de quinoa con garbanzos",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "Quinoa en grano, seca",
+        "food_id": "fdc_168874",
+        "grams": "70",
+        "unit": "g",
+        "state": "dry",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Garbanzo en conserva con sal, escurrido y enjuagado",
+        "food_id": "fdc_2644288",
+        "grams": "120",
+        "unit": "g",
+        "state": "drained",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Pimiento rojo, crudo",
+        "food_id": "fdc_2258590",
+        "grams": "80",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Pepino con piel, crudo",
+        "food_id": "fdc_2346406",
+        "grams": "80",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Aceite de oliva para ensalada o cocina (genérico USDA SR)",
+        "food_id": "fdc_171413",
+        "grams": "10",
+        "unit": "g",
+        "state": "ready_to_eat",
+        "notes": ""
+      }
+    ],
+    "steps": [
+      "Lavar la quinoa en un colador y cocerla en agua siguiendo el envase. Escurrir y dejar templar.",
+      "Enjuagar y escurrir los garbanzos en conserva y pesar 120 g de sólidos.",
+      "Cortar el pimiento y el pepino en dados pequeños.",
+      "Mezclar todo con el aceite medido y servir templado o frío."
+    ],
+    "time_minutes_estimate": 25,
+    "difficulty": "fácil",
+    "tags": [
+      "comida",
+      "cena"
+    ],
+    "allergens": [],
+    "review_status": "verified",
+    "notes": [
+      "Receta propia de MILO para el proyecto, no receta oficial USDA.",
+      "Pesos de porción comestible; sin conversión automática crudo/cocinado.",
+      "Nutrición estimada por suma de ingredientes, sin retención ni rendimiento de cocción."
+    ]
+  },
+  {
+    "recipe_id": "r016",
+    "title": "Gambas al ajillo con arroz integral",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "Gamba de cultivo, cruda",
+        "food_id": "fdc_2684443",
+        "grams": "150",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Arroz integral de grano largo, seco",
+        "food_id": "fdc_2512380",
+        "grams": "75",
+        "unit": "g",
+        "state": "dry",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Ajo, crudo",
+        "food_id": "fdc_1104647",
+        "grams": "6",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Aceite de oliva para ensalada o cocina (genérico USDA SR)",
+        "food_id": "fdc_171413",
+        "grams": "12",
+        "unit": "g",
+        "state": "ready_to_eat",
+        "notes": ""
+      }
+    ],
+    "steps": [
+      "Pesar el arroz integral en seco y cocerlo en agua siguiendo el envase; suele tardar más que el blanco.",
+      "Pelar las gambas y pesar 150 g de carne cruda. Laminar el ajo.",
+      "Calentar el aceite medido a fuego suave y dorar el ajo sin que se queme.",
+      "Añadir las gambas y cocinarlas hasta que estén opacas y firmes (63 °C). Servir sobre el arroz."
+    ],
+    "time_minutes_estimate": 35,
+    "difficulty": "media",
+    "tags": [
+      "comida",
+      "cena"
+    ],
+    "allergens": [
+      "crustacean"
+    ],
+    "review_status": "verified",
+    "notes": [
+      "Receta propia de MILO para el proyecto, no receta oficial USDA.",
+      "Pesos de porción comestible; sin conversión automática crudo/cocinado.",
+      "Nutrición estimada por suma de ingredientes, sin retención ni rendimiento de cocción."
+    ]
+  },
+  {
+    "recipe_id": "r017",
+    "title": "Hamburguesa de pavo con boniato y espárragos",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "Pavo picado 93% magro, crudo",
+        "food_id": "fdc_2514747",
+        "grams": "150",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Boniato naranja sin piel, crudo",
+        "food_id": "fdc_2346404",
+        "grams": "220",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Espárrago verde, crudo",
+        "food_id": "fdc_2710823",
+        "grams": "120",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Aceite de oliva para ensalada o cocina (genérico USDA SR)",
+        "food_id": "fdc_171413",
+        "grams": "8",
+        "unit": "g",
+        "state": "ready_to_eat",
+        "notes": ""
+      }
+    ],
+    "steps": [
+      "Precalentar el horno a 200 °C. Pelar el boniato, cortarlo en dados y hornearlo con la mitad del aceite unos 25 minutos.",
+      "Formar una hamburguesa con el pavo picado crudo y cocinarla en sartén hasta 74 °C en el centro.",
+      "Saltear los espárragos con el resto del aceite hasta que estén tiernos.",
+      "Servir la hamburguesa con el boniato y los espárragos."
+    ],
+    "time_minutes_estimate": 40,
+    "difficulty": "media",
+    "tags": [
+      "comida",
+      "cena"
+    ],
+    "allergens": [],
+    "review_status": "verified",
+    "notes": [
+      "Receta propia de MILO para el proyecto, no receta oficial USDA.",
+      "Pesos de porción comestible; sin conversión automática crudo/cocinado.",
+      "Nutrición estimada por suma de ingredientes, sin retención ni rendimiento de cocción."
+    ]
+  },
+  {
+    "recipe_id": "r018",
+    "title": "Batido de plátano, avena y leche",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "Leche desnatada con vitaminas A y D",
+        "food_id": "fdc_746776",
+        "grams": "250",
+        "unit": "g",
+        "state": "ready_to_eat",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Plátano maduro o ligeramente maduro, crudo",
+        "food_id": "fdc_1105314",
+        "grams": "120",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Copos de avena integral tradicionales, secos",
+        "food_id": "fdc_2346396",
+        "grams": "40",
+        "unit": "g",
+        "state": "dry",
+        "notes": ""
+      }
+    ],
+    "steps": [
+      "Pesar el plátano pelado, la leche y los copos de avena aptos para consumo sin cocción.",
+      "Triturar todo en la batidora hasta obtener una textura lisa.",
+      "Servir al momento."
+    ],
+    "time_minutes_estimate": 5,
+    "difficulty": "fácil",
+    "tags": [
+      "desayuno"
+    ],
+    "allergens": [
+      "gluten",
+      "milk"
+    ],
+    "review_status": "verified",
+    "notes": [
+      "Receta propia de MILO para el proyecto, no receta oficial USDA.",
+      "Pesos de porción comestible; sin conversión automática crudo/cocinado.",
+      "Nutrición estimada por suma de ingredientes, sin retención ni rendimiento de cocción."
+    ]
+  },
+  {
+    "recipe_id": "r019",
+    "title": "Manzana con almendras",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "Manzana gala con piel, cruda",
+        "food_id": "fdc_1750341",
+        "grams": "180",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Almendra entera, cruda",
+        "food_id": "fdc_2346393",
+        "grams": "25",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      }
+    ],
+    "steps": [
+      "Lavar la manzana y cortarla en gajos, sin retirar la piel.",
+      "Servir con las almendras pesadas, sin sal ni azúcar añadidos."
+    ],
+    "time_minutes_estimate": 2,
+    "difficulty": "fácil",
+    "tags": [
+      "snack"
+    ],
+    "allergens": [
+      "tree_nuts"
+    ],
+    "review_status": "verified",
+    "notes": [
+      "Receta propia de MILO para el proyecto, no receta oficial USDA.",
+      "Pesos de porción comestible; sin conversión automática crudo/cocinado.",
+      "Nutrición estimada por suma de ingredientes, sin retención ni rendimiento de cocción."
+    ]
+  },
+  {
+    "recipe_id": "r020",
+    "title": "Yogur griego con arándanos y pipas",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "Yogur griego natural desnatado",
+        "food_id": "fdc_330137",
+        "grams": "170",
+        "unit": "g",
+        "state": "ready_to_eat",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Arándano, crudo",
+        "food_id": "fdc_2346411",
+        "grams": "80",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Pipas de calabaza sin cáscara, crudas",
+        "food_id": "fdc_2515380",
+        "grams": "15",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      }
+    ],
+    "steps": [
+      "Lavar y escurrir los arándanos.",
+      "Servir el yogur con los arándanos y las pipas de calabaza peladas por encima."
+    ],
+    "time_minutes_estimate": 3,
+    "difficulty": "fácil",
+    "tags": [
+      "desayuno",
+      "snack"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "review_status": "verified",
+    "notes": [
+      "Receta propia de MILO para el proyecto, no receta oficial USDA.",
+      "Pesos de porción comestible; sin conversión automática crudo/cocinado.",
+      "Nutrición estimada por suma de ingredientes, sin retención ni rendimiento de cocción."
+    ]
+  },
+  {
+    "recipe_id": "r021",
+    "title": "Arroz con ternera picada y pimiento",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "Carne de vacuno picada 90% magra, cruda",
+        "food_id": "fdc_2514743",
+        "grams": "130",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Arroz blanco de grano largo sin enriquecer, seco",
+        "food_id": "fdc_2512381",
+        "grams": "75",
+        "unit": "g",
+        "state": "dry",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Pimiento rojo, crudo",
+        "food_id": "fdc_2258590",
+        "grams": "100",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Cebolla amarilla, cruda",
+        "food_id": "fdc_790646",
+        "grams": "60",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Aceite de oliva para ensalada o cocina (genérico USDA SR)",
+        "food_id": "fdc_171413",
+        "grams": "8",
+        "unit": "g",
+        "state": "ready_to_eat",
+        "notes": ""
+      }
+    ],
+    "steps": [
+      "Pesar el arroz en seco y cocerlo en agua siguiendo el envase.",
+      "Picar la cebolla y el pimiento y rehogarlos con el aceite medido a fuego medio.",
+      "Añadir la carne picada y cocinarla hasta que alcance 71 °C y no queden partes rosadas.",
+      "Mezclar con el arroz escurrido y servir."
+    ],
+    "time_minutes_estimate": 30,
+    "difficulty": "fácil",
+    "tags": [
+      "comida"
+    ],
+    "allergens": [],
+    "review_status": "verified",
+    "notes": [
+      "Receta propia de MILO para el proyecto, no receta oficial USDA.",
+      "Pesos de porción comestible; sin conversión automática crudo/cocinado.",
+      "Nutrición estimada por suma de ingredientes, sin retención ni rendimiento de cocción."
+    ]
+  },
+  {
+    "recipe_id": "r022",
+    "title": "Alubias blancas con espinacas",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "Alubia cannellini en conserva con sal, escurrida y enjuagada",
+        "food_id": "fdc_2644287",
+        "grams": "220",
+        "unit": "g",
+        "state": "drained",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Espinaca baby, cruda",
+        "food_id": "fdc_1999632",
+        "grams": "100",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Zanahoria madura, cruda",
+        "food_id": "fdc_2258586",
+        "grams": "80",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Cebolla amarilla, cruda",
+        "food_id": "fdc_790646",
+        "grams": "60",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Ajo, crudo",
+        "food_id": "fdc_1104647",
+        "grams": "5",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Aceite de oliva para ensalada o cocina (genérico USDA SR)",
+        "food_id": "fdc_171413",
+        "grams": "10",
+        "unit": "g",
+        "state": "ready_to_eat",
+        "notes": ""
+      }
+    ],
+    "steps": [
+      "Enjuagar y escurrir las alubias en conserva y pesar 220 g de sólidos.",
+      "Picar la cebolla, el ajo y la zanahoria y rehogarlos con el aceite medido unos 8 minutos.",
+      "Añadir un poco de agua, las alubias y las espinacas lavadas. Cocinar hasta que las espinacas pierdan volumen.",
+      "Servir caliente con el caldo del guiso."
+    ],
+    "time_minutes_estimate": 20,
+    "difficulty": "fácil",
+    "tags": [
+      "comida",
+      "cena"
+    ],
+    "allergens": [],
+    "review_status": "verified",
+    "notes": [
+      "Receta propia de MILO para el proyecto, no receta oficial USDA.",
+      "Pesos de porción comestible; sin conversión automática crudo/cocinado.",
+      "Nutrición estimada por suma de ingredientes, sin retención ni rendimiento de cocción."
+    ]
+  },
+  {
+    "recipe_id": "r023",
+    "title": "Ensalada de pollo y aguacate",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "Pechuga de pollo sin piel ni hueso, cocinada en líquido",
+        "food_id": "fdc_331960",
+        "grams": "130",
+        "unit": "g",
+        "state": "cooked",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Lechuga romana verde, cruda",
+        "food_id": "fdc_2346389",
+        "grams": "80",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Aguacate Hass pelado, crudo",
+        "food_id": "fdc_2710824",
+        "grams": "70",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Tomate roma, crudo",
+        "food_id": "fdc_1999634",
+        "grams": "100",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Aceite de oliva para ensalada o cocina (genérico USDA SR)",
+        "food_id": "fdc_171413",
+        "grams": "8",
+        "unit": "g",
+        "state": "ready_to_eat",
+        "notes": ""
+      }
+    ],
+    "steps": [
+      "Usar pechuga ya cocinada en líquido y pesarla después de cocinar. Si se parte de pollo crudo, cocinarlo hasta 74 °C y pesarlo después.",
+      "Lavar la lechuga y el tomate. Pelar el aguacate y pesar la parte comestible.",
+      "Cortar todo en trozos y mezclar con el aceite medido."
+    ],
+    "time_minutes_estimate": 15,
+    "difficulty": "fácil",
+    "tags": [
+      "comida",
+      "cena"
+    ],
+    "allergens": [],
+    "review_status": "verified",
+    "notes": [
+      "Receta propia de MILO para el proyecto, no receta oficial USDA.",
+      "Pesos de porción comestible; sin conversión automática crudo/cocinado.",
+      "Nutrición estimada por suma de ingredientes, sin retención ni rendimiento de cocción."
+    ]
+  },
+  {
+    "recipe_id": "r024",
+    "title": "Huevos con patata y espárragos",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "Huevo entero grande, crudo, sin cáscara",
+        "food_id": "fdc_748967",
+        "grams": "120",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Patata russet sin piel, cruda",
+        "food_id": "fdc_2346401",
+        "grams": "200",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Espárrago verde, crudo",
+        "food_id": "fdc_2710823",
+        "grams": "150",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Aceite de oliva para ensalada o cocina (genérico USDA SR)",
+        "food_id": "fdc_171413",
+        "grams": "10",
+        "unit": "g",
+        "state": "ready_to_eat",
+        "notes": ""
+      }
+    ],
+    "steps": [
+      "Pelar la patata, cortarla en dados y cocerla en agua o al vapor hasta que esté tierna.",
+      "Saltear los espárragos troceados con el aceite medido.",
+      "Añadir la patata escurrida y los huevos batidos; remover hasta que cuajen y alcancen 71 °C."
+    ],
+    "time_minutes_estimate": 30,
+    "difficulty": "fácil",
+    "tags": [
+      "cena"
+    ],
+    "allergens": [
+      "egg"
+    ],
+    "review_status": "verified",
+    "notes": [
+      "Receta propia de MILO para el proyecto, no receta oficial USDA.",
+      "Pesos de porción comestible; sin conversión automática crudo/cocinado.",
+      "Nutrición estimada por suma de ingredientes, sin retención ni rendimiento de cocción."
+    ]
+  },
+  {
+    "recipe_id": "r025",
+    "title": "Salteado de tofu con brócoli y arroz integral",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "Tofu firme con sulfato cálcico, crudo",
+        "food_id": "fdc_172475",
+        "grams": "160",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Brócoli, crudo",
+        "food_id": "fdc_747447",
+        "grams": "150",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Pimiento rojo, crudo",
+        "food_id": "fdc_2258590",
+        "grams": "80",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Arroz integral de grano largo, seco",
+        "food_id": "fdc_2512380",
+        "grams": "70",
+        "unit": "g",
+        "state": "dry",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Aceite de oliva para ensalada o cocina (genérico USDA SR)",
+        "food_id": "fdc_171413",
+        "grams": "10",
+        "unit": "g",
+        "state": "ready_to_eat",
+        "notes": ""
+      }
+    ],
+    "steps": [
+      "Cocer el arroz integral pesado en seco siguiendo el envase.",
+      "Cortar el tofu firme en dados y el brócoli en ramilletes pequeños; cortar el pimiento en tiras.",
+      "Saltear el tofu con el aceite medido hasta que se dore y añadir las verduras unos minutos.",
+      "Servir sobre el arroz. No incluye salsa de soja ni otros condimentos energéticos."
+    ],
+    "time_minutes_estimate": 35,
+    "difficulty": "media",
+    "tags": [
+      "comida",
+      "cena"
+    ],
+    "allergens": [
+      "soy"
+    ],
+    "review_status": "verified",
+    "notes": [
+      "Receta propia de MILO para el proyecto, no receta oficial USDA.",
+      "Pesos de porción comestible; sin conversión automática crudo/cocinado.",
+      "Nutrición estimada por suma de ingredientes, sin retención ni rendimiento de cocción."
+    ]
+  },
+  {
+    "recipe_id": "r026",
+    "title": "Macedonia de naranja, kiwi y piña",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "Naranja navel, cruda",
+        "food_id": "fdc_746771",
+        "grams": "150",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Kiwi verde pelado, crudo",
+        "food_id": "fdc_2710831",
+        "grams": "100",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Piña, cruda",
+        "food_id": "fdc_2346398",
+        "grams": "120",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      }
+    ],
+    "steps": [
+      "Pelar la naranja, el kiwi y la piña y pesar la parte comestible.",
+      "Cortar la fruta en dados y servir al momento."
+    ],
+    "time_minutes_estimate": 5,
+    "difficulty": "fácil",
+    "tags": [
+      "desayuno",
+      "snack"
+    ],
+    "allergens": [],
+    "review_status": "verified",
+    "notes": [
+      "Receta propia de MILO para el proyecto, no receta oficial USDA.",
+      "Pesos de porción comestible; sin conversión automática crudo/cocinado.",
+      "Nutrición estimada por suma de ingredientes, sin retención ni rendimiento de cocción."
+    ]
+  },
+  {
+    "recipe_id": "r027",
+    "title": "Crema de calabacín",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "Calabacín verde con piel, crudo",
+        "food_id": "fdc_2685568",
+        "grams": "300",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Patata russet sin piel, cruda",
+        "food_id": "fdc_2346401",
+        "grams": "100",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Cebolla amarilla, cruda",
+        "food_id": "fdc_790646",
+        "grams": "60",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Aceite de oliva para ensalada o cocina (genérico USDA SR)",
+        "food_id": "fdc_171413",
+        "grams": "10",
+        "unit": "g",
+        "state": "ready_to_eat",
+        "notes": ""
+      }
+    ],
+    "steps": [
+      "Lavar el calabacín y cortarlo con piel. Pelar la patata y la cebolla y trocearlas.",
+      "Rehogar la cebolla con el aceite medido, añadir calabacín, patata y agua hasta cubrir.",
+      "Cocer unos 15 minutos hasta que la patata esté tierna y triturar. El agua no añade energía al cálculo."
+    ],
+    "time_minutes_estimate": 25,
+    "difficulty": "fácil",
+    "tags": [
+      "cena"
+    ],
+    "allergens": [],
+    "review_status": "verified",
+    "notes": [
+      "Receta propia de MILO para el proyecto, no receta oficial USDA.",
+      "Pesos de porción comestible; sin conversión automática crudo/cocinado.",
+      "Nutrición estimada por suma de ingredientes, sin retención ni rendimiento de cocción."
+    ]
+  },
+  {
+    "recipe_id": "r028",
+    "title": "Avena cocida con manzana y nueces",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "Copos de avena integral tradicionales, secos",
+        "food_id": "fdc_2346396",
+        "grams": "60",
+        "unit": "g",
+        "state": "dry",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Manzana gala con piel, cruda",
+        "food_id": "fdc_1750341",
+        "grams": "150",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Nuez inglesa sin cáscara, cruda",
+        "food_id": "fdc_2346394",
+        "grams": "15",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      }
+    ],
+    "steps": [
+      "Cocer los copos de avena pesados en seco con agua unos 5 minutos, removiendo.",
+      "Añadir la manzana rallada o en dados y servir con las nueces troceadas por encima."
+    ],
+    "time_minutes_estimate": 10,
+    "difficulty": "fácil",
+    "tags": [
+      "desayuno"
+    ],
+    "allergens": [
+      "gluten",
+      "tree_nuts"
+    ],
+    "review_status": "verified",
+    "notes": [
+      "Receta propia de MILO para el proyecto, no receta oficial USDA.",
+      "Pesos de porción comestible; sin conversión automática crudo/cocinado.",
+      "Nutrición estimada por suma de ingredientes, sin retención ni rendimiento de cocción."
+    ]
+  }
+]

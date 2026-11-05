@@ -2,8 +2,9 @@ from pathlib import Path
 
 import pytest
 
-from milo.catalog import FoodCatalog
+from milo.config import FOODS_CSV
 from milo.models import Food, NutrientValues, Recipe, RecipeIngredient
+from milo.nutrition import FoodCatalog
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -74,4 +75,4 @@ def recipe():
 
 @pytest.fixture(scope="session")
 def real_catalog():
-    return FoodCatalog.from_csv(ROOT / "data/structured/foods.csv")
+    return FoodCatalog.from_csv(FOODS_CSV)

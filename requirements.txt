@@ -1,2 +1,28 @@
-# Código, RAG, grafo y herramientas del notebook académico.
--e .[dev,rag,agent]
+# Dependencias de MILO (Python 3.11 o superior).
+#   python -m pip install -r requirements.txt
+# Versiones exactas del entorno en el que lo he probado: requirements-lock.txt
+
+# Gemini, RAG y agente
+langchain-google-genai>=4.4,<5
+langchain-core>=1.7,<2
+langchain-chroma>=1.1,<2
+chromadb>=1.5,<2
+langgraph>=1.2,<2
+langgraph-checkpoint-sqlite>=3.1,<4
+# Datos y documentos
+pydantic>=2.10,<3
+pydantic-settings>=2.7,<3
+pypdf>=5,<7
+httpx>=0.28,<1
+# Aplicación web
+streamlit>=1.50,<2
+pandas>=2.2
+altair>=5
+# Notebook y pruebas
+ipykernel>=6
+nbformat>=5
+nbclient>=0.10
+pytest>=8
+ruff>=0.9
+# El propio paquete milo (carpeta src/)
+-e .

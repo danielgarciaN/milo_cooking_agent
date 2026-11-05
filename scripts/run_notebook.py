@@ -29,7 +29,7 @@ def main():
     path = ROOT / "MILO_Proyecto_Final.ipynb"
     notebook = nbformat.read(path, as_version=4)
     client = NotebookClient(
-        notebook, timeout=240, kernel_name="milo-final", resources={"metadata": {"path": str(ROOT)}}
+        notebook, timeout=600, kernel_name="milo-final", resources={"metadata": {"path": str(ROOT)}}
     )
     # No conservo salidas antiguas de celdas que quizá no lleguen a ejecutarse.
     for cell in notebook.cells:

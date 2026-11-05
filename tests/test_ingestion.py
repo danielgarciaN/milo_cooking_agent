@@ -58,9 +58,11 @@ def test_pdf_ingestion_actual_aesan():
     assert report["pages"] == 19
     assert not report["empty_pages"]
     assert "legumbres" in " ".join(c.text.lower() for c in chunks)
-    assert {c.page for c in chunks} == set(range(1, 20))
+    # Portada, índice y contraportada (páginas 1, 2 y 19) no se indexan.
+    assert {c.page for c in chunks} == set(range(3, 19))
+    assert report["skipped_pages"] == [1, 2, 19]
     source.sha256 = "0" * 64
-    with pytest.raises(ValueError, match="procedencia"):
+    with pytest.raises(ValueError, match="sources.json"):
         ingest_pdf(path, source)
 
 
