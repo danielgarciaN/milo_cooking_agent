@@ -828,5 +828,257 @@
     "vegan": true,
     "vegetarian": true,
     "notes": "Selección y traducción editorial MILO. Peso de porción comestible. Alérgenos inherentes deducidos del alimento; trazas no evaluadas."
+  },
+  {
+    "fdc_id": 2646168,
+    "expected_description": "Pork, loin, boneless, raw",
+    "name_es": "Lomo de cerdo deshuesado, crudo",
+    "state": "raw",
+    "allergens": [],
+    "allergen_review_complete": true,
+    "is_compound": false,
+    "vegan": false,
+    "vegetarian": false,
+    "notes": "Selección y traducción editorial MILO. Peso de porción comestible. Alérgenos inherentes deducidos del alimento; trazas no evaluadas."
+  },
+  {
+    "fdc_id": 2646171,
+    "expected_description": "Chicken, thigh, boneless, skinless, raw",
+    "name_es": "Muslo de pollo sin piel ni hueso, crudo",
+    "state": "raw",
+    "allergens": [],
+    "allergen_review_complete": true,
+    "is_compound": false,
+    "vegan": false,
+    "vegetarian": false,
+    "notes": "Selección y traducción editorial MILO. Peso de porción comestible. Alérgenos inherentes deducidos del alimento; trazas no evaluadas."
+  },
+  {
+    "fdc_id": 2646173,
+    "expected_description": "Beef, round, top round, boneless, choice, raw",
+    "name_es": "Filete de ternera (tapa), crudo",
+    "state": "raw",
+    "allergens": [],
+    "allergen_review_complete": true,
+    "is_compound": false,
+    "vegan": false,
+    "vegetarian": false,
+    "notes": "Selección y traducción editorial MILO. Peso de porción comestible. Alérgenos inherentes deducidos del alimento; trazas no evaluadas."
+  },
+  {
+    "fdc_id": 2647442,
+    "expected_description": "Cheese, queso fresco, solid",
+    "name_es": "Queso fresco",
+    "state": "ready_to_eat",
+    "allergens": [
+      "milk"
+    ],
+    "allergen_review_complete": true,
+    "is_compound": false,
+    "vegan": false,
+    "vegetarian": null,
+    "notes": "Selección y traducción editorial MILO. Peso de porción comestible. Alérgenos inherentes deducidos del alimento; trazas no evaluadas. Vegetariano según el cuajo de la marca."
+  },
+  {
+    "fdc_id": 746766,
+    "expected_description": "Cheese, ricotta, whole milk",
+    "name_es": "Requesón (ricotta) de leche entera",
+    "state": "ready_to_eat",
+    "allergens": [
+      "milk"
+    ],
+    "allergen_review_complete": true,
+    "is_compound": false,
+    "vegan": false,
+    "vegetarian": null,
+    "notes": "Selección y traducción editorial MILO. Peso de porción comestible. Alérgenos inherentes deducidos del alimento; trazas no evaluadas. Vegetariano según el cuajo de la marca."
+  },
+  {
+    "fdc_id": 2259795,
+    "expected_description": "Cheese, parmesan, grated, refrigerated",
+    "name_es": "Queso parmesano rallado",
+    "state": "ready_to_eat",
+    "allergens": [
+      "milk"
+    ],
+    "allergen_review_complete": true,
+    "is_compound": false,
+    "vegan": false,
+    "vegetarian": null,
+    "notes": "Selección y traducción editorial MILO. Peso de porción comestible. Alérgenos inherentes deducidos del alimento; trazas no evaluadas. El parmesano tradicional usa cuajo animal."
+  },
+  {
+    "fdc_id": 746778,
+    "expected_description": "Milk, reduced fat, fluid, 2% milkfat, with added vitamin A and vitamin D",
+    "name_es": "Leche semidesnatada (2 % de grasa)",
+    "state": "ready_to_eat",
+    "allergens": [
+      "milk"
+    ],
+    "allergen_review_complete": true,
+    "is_compound": false,
+    "vegan": false,
+    "vegetarian": true,
+    "notes": "Selección y traducción editorial MILO. Peso de porción comestible. Alérgenos inherentes deducidos del alimento; trazas no evaluadas."
+  },
+  {
+    "fdc_id": 2259794,
+    "expected_description": "Yogurt, Greek, plain, whole milk",
+    "name_es": "Yogur griego natural de leche entera",
+    "state": "ready_to_eat",
+    "allergens": [
+      "milk"
+    ],
+    "allergen_review_complete": true,
+    "is_compound": false,
+    "vegan": false,
+    "vegetarian": true,
+    "notes": "Selección y traducción editorial MILO. Peso de porción comestible. Alérgenos inherentes deducidos del alimento; trazas no evaluadas."
+  },
+  {
+    "fdc_id": 2258588,
+    "expected_description": "Peppers, bell, green, raw",
+    "name_es": "Pimiento verde, crudo",
+    "state": "raw",
+    "allergens": [],
+    "allergen_review_complete": true,
+    "is_compound": false,
+    "vegan": true,
+    "vegetarian": true,
+    "notes": "Selección y traducción editorial MILO. Peso de porción comestible. Alérgenos inherentes deducidos del alimento; trazas no evaluadas."
+  },
+  {
+    "fdc_id": 2346400,
+    "expected_description": "Beans, snap, green, raw",
+    "name_es": "Judía verde, cruda",
+    "state": "raw",
+    "allergens": [],
+    "allergen_review_complete": true,
+    "is_compound": false,
+    "vegan": true,
+    "vegetarian": true,
+    "notes": "Selección y traducción editorial MILO. Peso de porción comestible. Alérgenos inherentes deducidos del alimento; trazas no evaluadas."
+  },
+  {
+    "fdc_id": 2685570,
+    "expected_description": "Squash, winter, butternut, raw",
+    "name_es": "Calabaza butternut, cruda",
+    "state": "raw",
+    "allergens": [],
+    "allergen_review_complete": true,
+    "is_compound": false,
+    "vegan": true,
+    "vegetarian": true,
+    "notes": "Selección y traducción editorial MILO. Peso de porción comestible. Alérgenos inherentes deducidos del alimento; trazas no evaluadas."
+  },
+  {
+    "fdc_id": 2685576,
+    "expected_description": "Beets, raw",
+    "name_es": "Remolacha, cruda",
+    "state": "raw",
+    "allergens": [],
+    "allergen_review_complete": true,
+    "is_compound": false,
+    "vegan": true,
+    "vegetarian": true,
+    "notes": "Selección y traducción editorial MILO. Peso de porción comestible. Alérgenos inherentes deducidos del alimento; trazas no evaluadas."
+  },
+  {
+    "fdc_id": 2710822,
+    "expected_description": "Arugula, baby, raw",
+    "name_es": "Rúcula baby, cruda",
+    "state": "raw",
+    "allergens": [],
+    "allergen_review_complete": true,
+    "is_compound": false,
+    "vegan": true,
+    "vegetarian": true,
+    "notes": "Selección y traducción editorial MILO. Peso de porción comestible. Alérgenos inherentes deducidos del alimento; trazas no evaluadas."
+  },
+  {
+    "fdc_id": 746773,
+    "expected_description": "Pears, raw, bartlett",
+    "name_es": "Pera, cruda",
+    "state": "raw",
+    "allergens": [],
+    "allergen_review_complete": true,
+    "is_compound": false,
+    "vegan": true,
+    "vegetarian": true,
+    "notes": "Selección y traducción editorial MILO. Peso de porción comestible. Alérgenos inherentes deducidos del alimento; trazas no evaluadas."
+  },
+  {
+    "fdc_id": 325430,
+    "expected_description": "Peaches, yellow, raw",
+    "name_es": "Melocotón amarillo, crudo",
+    "state": "raw",
+    "allergens": [],
+    "allergen_review_complete": true,
+    "is_compound": false,
+    "vegan": true,
+    "vegetarian": true,
+    "notes": "Selección y traducción editorial MILO. Peso de porción comestible. Alérgenos inherentes deducidos del alimento; trazas no evaluadas."
+  },
+  {
+    "fdc_id": 746770,
+    "expected_description": "Melons, cantaloupe, raw",
+    "name_es": "Melón cantalupo, crudo",
+    "state": "raw",
+    "allergens": [],
+    "allergen_review_complete": true,
+    "is_compound": false,
+    "vegan": true,
+    "vegetarian": true,
+    "notes": "Selección y traducción editorial MILO. Peso de porción comestible. Alérgenos inherentes deducidos del alimento; trazas no evaluadas."
+  },
+  {
+    "fdc_id": 2346399,
+    "expected_description": "Cherries, sweet, dark red, raw",
+    "name_es": "Cereza, cruda",
+    "state": "raw",
+    "allergens": [],
+    "allergen_review_complete": true,
+    "is_compound": false,
+    "vegan": true,
+    "vegetarian": true,
+    "notes": "Selección y traducción editorial MILO. Peso de porción comestible. Alérgenos inherentes deducidos del alimento; trazas no evaluadas."
+  },
+  {
+    "fdc_id": 2710819,
+    "expected_description": "Chia seeds, dry, raw",
+    "name_es": "Semillas de chía, crudas",
+    "state": "raw",
+    "allergens": [],
+    "allergen_review_complete": true,
+    "is_compound": false,
+    "vegan": true,
+    "vegetarian": true,
+    "notes": "Selección y traducción editorial MILO. Peso de porción comestible. Alérgenos inherentes deducidos del alimento; trazas no evaluadas."
+  },
+  {
+    "fdc_id": 2262075,
+    "expected_description": "Flaxseed, ground",
+    "name_es": "Linaza molida",
+    "state": "ready_to_eat",
+    "allergens": [],
+    "allergen_review_complete": true,
+    "is_compound": false,
+    "vegan": true,
+    "vegetarian": true,
+    "notes": "Selección y traducción editorial MILO. Peso de porción comestible. Alérgenos inherentes deducidos del alimento; trazas no evaluadas."
+  },
+  {
+    "fdc_id": 321358,
+    "expected_description": "Hummus, commercial",
+    "name_es": "Hummus comercial",
+    "state": "ready_to_eat",
+    "allergens": [
+      "sesame"
+    ],
+    "allergen_review_complete": false,
+    "is_compound": true,
+    "vegan": null,
+    "vegetarian": null,
+    "notes": "Selección y traducción editorial MILO. Peso de porción comestible. Alérgenos inherentes deducidos del alimento; trazas no evaluadas. Producto compuesto: revisar etiqueta; alérgenos adicionales pendientes."
   }
 ]

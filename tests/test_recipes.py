@@ -17,9 +17,7 @@ def test_fridge_search_reports_what_is_missing(kitchen):
     assert top["recipe_id"] == "r001"
     assert top["te_falta"] == ["Tomate roma, crudo"]
     assert result["ingredientes_no_reconocidos"] == []
-    assert kitchen.search(UserProfile(), ingredientes=["chocolate"])["ingredientes_no_reconocidos"] == [
-        "chocolate"
-    ]
+    assert kitchen.search(UserProfile(), ingredientes=["caviar"])["ingredientes_no_reconocidos"] == ["caviar"]
 
 
 def test_profile_filters_recipes(kitchen):
@@ -59,7 +57,7 @@ def test_dish_requires_known_foods(kitchen):
         UserProfile(), [{"alimento": "huevo", "gramos": 120}, {"alimento": "espinacas", "gramos": 80}]
     )
     assert ok["por_racion"]["kcal"] > 0
-    assert "error" in kitchen.dish(UserProfile(), [{"alimento": "chocolate", "gramos": 50}])
+    assert "error" in kitchen.dish(UserProfile(), [{"alimento": "caviar", "gramos": 50}])
 
 
 def test_weekly_plan_and_shopping_list(kitchen):
@@ -85,7 +83,7 @@ def test_plan_respects_allergies(kitchen):
 
 
 def test_substitution_without_known_substitute_offers_catalog_options(kitchen):
-    result = kitchen.substitute(UserProfile(), "r007", "aguacate", "hummus")
+    result = kitchen.substitute(UserProfile(), "r007", "aguacate", "caviar")
     assert result["tipo"] == "opciones_sustitucion" and len(result["opciones"]) == 4
     assert all(kitchen.catalog.search(o["alimento"]) for o in result["opciones"])
     allergic = UserProfile(restrictions=[DietaryRestriction(kind="allergy", value="tree_nuts")])

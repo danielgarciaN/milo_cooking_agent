@@ -27,10 +27,13 @@ def test_free_text_resolution(catalog, real_catalog):
     with pytest.raises(AmbiguousFoodError):
         catalog.resolve("alimento")
     # Mismo alimento crudo y cocinado: elijo el estado en que se suele pesar.
-    assert real_catalog.resolve("pollo").state == "raw"
+    assert real_catalog.resolve("pechuga de pollo").state == "raw"
+    # Con pechuga y muslo crudos en el catálogo, "pollo" es ambiguo: MILO pide que elija.
+    with pytest.raises(AmbiguousFoodError):
+        real_catalog.resolve("pollo")
     assert real_catalog.resolve("huevos").name_es.startswith("Huevo entero")
     with pytest.raises(FoodNotFoundError):
-        catalog.resolve("chocolate")
+        catalog.resolve("caviar")
 
 
 @pytest.mark.parametrize("kind", ["allergy", "intolerance"])

@@ -9,7 +9,7 @@
 | **System prompt** | `src/milo/prompts/system.md` | Instrucciones de MILO (rol, tono, RAG, herramientas, memoria, seguridad) |
 | **Código fuente** | `src/milo/`, `app.py`, `scripts/` | Gemini, RAG, ChromaDB, LangGraph, memoria, herramientas e interfaz |
 | **Documentos del RAG** | `data/documents/` | Guía AESAN (PDF), recetario de MILO y técnicas y sustituciones |
-| **Datos nutricionales** | `data/foods.csv`, `data/recipes.json`, `data/sources.json` | 70 alimentos USDA, 28 recetas y procedencia de las fuentes |
+| **Datos nutricionales** | `data/foods.csv`, `data/recipes.json`, `data/sources.json` | 121 alimentos USDA, 36 recetas y procedencia de las fuentes |
 | **Presentación** | `presentacion/MILO_presentacion.html` | 12 diapositivas (abrir en el navegador; flechas para avanzar) |
 | **Guion y preguntas** | `presentacion/GUION.md` | Texto de cada diapositiva, demo y posibles preguntas del profesor |
 | **Bonus: Streamlit** | `app.py` | App con chat, Mi nevera, Plan semanal y Mi perfil |
@@ -26,7 +26,7 @@ Si la entrega es un ZIP, lo creo desde la carpeta del proyecto excluyendo esas t
 ```powershell
 .venv\Scripts\Activate.ps1
 python -m pytest                    # → 92 passed (sin gastar API)
-python scripts/build_index.py       # → Vectores guardados ...: 75
+python scripts/build_index.py       # → Vectores guardados ...: 83
 python -m pytest --live             # → 98 passed (usa Gemini; tarda ~2 min)
 python scripts/run_notebook.py      # → {"errors": 0}
 streamlit run app.py                # → http://localhost:8501
@@ -43,7 +43,7 @@ streamlit run app.py                # → http://localhost:8501
 ## 4. Despliegue público en Streamlit Community Cloud (bonus)
 
 El código ya está preparado: lee la clave de *Secrets*, instala todo desde `requirements.txt` y, como `storage/` no se
-sube a GitHub, construye el índice de ChromaDB automáticamente la primera vez que arranca (75 embeddings).
+sube a GitHub, construye el índice de ChromaDB automáticamente la primera vez que arranca (83 embeddings).
 
 Pasos (necesitan mi cuenta de GitHub y de Streamlit):
 

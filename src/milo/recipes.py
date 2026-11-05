@@ -54,13 +54,18 @@ SHARES = {
 }  # fmt: skip
 PANTRY = ("fdc_171413", "fdc_1104647")  # Aceite de oliva y ajo: doy por hecho que hay en casa.
 SHOPPING_CATEGORIES = [
-    ("Carne, pescado y marisco", ["pollo", "pavo", "vacuno", "salmon", "bacalao", "atun", "gamba"]),
-    ("Huevos y lácteos", ["huevo", "clara", "leche", "yogur", "queso"]),
-    ("Cereales, pan y pasta", ["arroz", "espagueti", "avena", "pan", "tortilla comercial", "quinoa"]),
-    ("Legumbres y tofu", ["garbanzo", "alubia", "lenteja", "tofu", "soja"]),
-    ("Frutos secos y semillas", ["nuez", "almendra", "anacardo", "cacahuete", "pipas"]),
+    ("Carne, pescado y marisco",
+     ["pollo", "pavo", "vacuno", "ternera", "cerdo", "salmon", "bacalao", "pescadilla", "sardina", "atun",
+      "gamba", "mejillon", "calamar"]),
+    ("Huevos y lácteos", ["huevo", "clara", "leche", "yogur", "queso", "requeson", "mantequilla"]),
+    ("Cereales, pan y pasta", ["arroz", "espagueti", "avena", "pan", "tortilla comercial", "quinoa", "cuscus"]),
+    ("Legumbres y tofu", ["garbanzo", "alubia", "lenteja", "guisante", "tofu", "soja", "hummus"]),
+    ("Frutos secos y semillas",
+     ["nuez", "almendra", "anacardo", "cacahuete", "pipas", "semillas", "linaza"]),
+    ("Despensa y condimentos",
+     ["aceituna", "sal", "pimenton", "oregano", "vinagre", "miel", "cacao", "chocolate"]),
     ("Aceites", ["aceite"]),
-]
+]  # fmt: skip
 
 
 def _num(value, places: int = 1) -> float | None:

@@ -21,7 +21,7 @@ def test_all_package_modules_import_without_key():
 
 
 def test_catalog_coverage_and_real_ids(real_catalog):
-    assert len(real_catalog.foods) >= 50
+    assert len(real_catalog.foods) >= 100
     assert len({f.fdc_id for f in real_catalog.foods.values()}) == len(real_catalog.foods)
     sources = {s["source_id"] for s in json.loads((ROOT / "data/sources.json").read_text(encoding="utf-8"))}
     for food in real_catalog.foods.values():

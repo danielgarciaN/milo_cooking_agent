@@ -89,34 +89,6 @@
     "usage": "structured_food_macros"
   },
   {
-    "source_id": "WHO_2026",
-    "title": "OMS alimentación saludable 2026",
-    "url": "https://www.who.int/es/news-room/fact-sheets/detail/healthy-diet",
-    "file_type": "web",
-    "version": null,
-    "status": "pending",
-    "downloaded_at": null,
-    "size_bytes": null,
-    "sha256": null,
-    "path": null,
-    "usage_conditions": "do_not_copy_full_page",
-    "usage": "rag_paraphrased_summary"
-  },
-  {
-    "source_id": "HARVARD_PLATE",
-    "title": "Healthy Eating Plate",
-    "url": "https://nutritionsource.hsph.harvard.edu/healthy-eating-plate/",
-    "file_type": "web",
-    "version": null,
-    "status": "pending",
-    "downloaded_at": null,
-    "size_bytes": null,
-    "sha256": null,
-    "path": null,
-    "usage_conditions": "review",
-    "usage": "supporting_reference"
-  },
-  {
     "source_id": "MILO_RECETAS",
     "title": "Mi recetario revisado para MILO",
     "url": "data/documents/recetario_milo.md",
@@ -124,8 +96,8 @@
     "version": "2026-10-30",
     "status": "created",
     "downloaded_at": null,
-    "size_bytes": 24032,
-    "sha256": "3dee1c5212e42ecdeaefd45a5ec51901f212ef31368423215d56fe9c0ebca419",
+    "size_bytes": 30101,
+    "sha256": "ccd87718910263ff4b426f8bc9ee7f3982b4201fd58a9b111f5f753cdf7ac80f",
     "path": "data/documents/recetario_milo.md",
     "usage_conditions": "Documento propio del proyecto; referencias externas identificadas.",
     "usage": "rag_general"

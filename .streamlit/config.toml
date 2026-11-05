@@ -1,11 +1,15 @@
-# Colores oficiales de MILO: naranja #F49B43, crema #FFF6E9, verde suave #86AD8F y carbón #292D32.
+# Identidad visual de MILO.
+# Colores oficiales: naranja #F49B43, crema #FFF6E9, verde suave #86AD8F y carbón #292D32.
+# Tipografías (Google Fonts, licencia SIL OFL): Nunito para títulos y DM Sans para el texto.
 [theme]
 base = "light"
 primaryColor = "#F49B43"
 backgroundColor = "#FFF6E9"
 secondaryBackgroundColor = "#FDEBD3"
 textColor = "#292D32"
-font = "Nunito:https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap, sans-serif"
+font = "DM Sans:https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap, sans-serif"
+headingFont = "Nunito:https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&display=swap, sans-serif"
+baseFontSize = 17
 baseRadius = "large"
 
 [theme.sidebar]

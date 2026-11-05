@@ -37,9 +37,9 @@ herramientas y memoria, un system prompt diseñado y justificado, demostración 
 | Embeddings | Gemini `gemini-embedding-001` (3072 dimensiones) |
 | Base vectorial | ChromaDB persistente local (`storage/chroma`) |
 | Agente y memoria | LangGraph sobre LangChain, checkpointer `SqliteSaver` (`storage/memoria.sqlite`) |
-| Datos nutricionales | USDA FoodData Central (70 alimentos) + validación con Pydantic |
+| Datos nutricionales | USDA FoodData Central (121 alimentos) + validación con Pydantic |
 | Notebook | Jupyter |
-| Interfaz (bonus) | Streamlit |
+| Interfaz (bonus) | Streamlit · tipografías Nunito y DM Sans · iconos Material Symbols y Lucide |
 
 ## 3. Arquitectura
 
@@ -67,8 +67,8 @@ milo_cooking_agent/
 │   └── config.py               ← rutas y configuración (.env)
 ├── data/
 │   ├── documents/              ← los 3 documentos del RAG
-│   ├── foods.csv               ← 70 alimentos USDA (valores por 100 g)
-│   ├── recipes.json            ← 28 recetas en gramos
+│   ├── foods.csv               ← 121 alimentos USDA (valores por 100 g)
+│   ├── recipes.json            ← 36 recetas en gramos
 │   ├── sources.json            ← procedencia, versión y hash de cada fuente
 │   └── usda/                   ← selección de alimentos y descargas oficiales de USDA
 ├── scripts/                    ← construir índice, chat por terminal, preparar recetas, etc.
@@ -82,10 +82,10 @@ milo_cooking_agent/
 | Documento | Tipo | Contenido | Fragmentos |
 |---|---|---|---|
 | `aesan_recomendaciones_dieteticas_2022.pdf` | PDF oficial, 19 páginas | Guía AESAN *Recomendaciones dietéticas saludables y sostenibles* (Ministerio de Consumo, 2022) | 35 |
-| `recetario_milo.md` | Documento propio | 28 recetas con gramos, estado de cada ingrediente, pasos, dieta y alérgenos | 29 |
+| `recetario_milo.md` | Documento propio | 36 recetas con gramos, estado de cada ingrediente, pasos, dieta y alérgenos | 37 |
 | `tecnicas_y_sustituciones.md` | Documento propio | Pesado, cocción, higiene, temperaturas seguras y sustituciones | 11 |
 
-En total **75 fragmentos** (~9.000 palabras, unas 30 páginas equivalentes). Las recetas usan solo alimentos de
+En total **83 fragmentos** (~9.900 palabras, unas 33 páginas equivalentes). Las recetas usan solo alimentos de
 `data/foods.csv`; las temperaturas de seguridad siguen FoodSafety.gov. Cada archivo está registrado en
 `data/sources.json` con su hash SHA-256 para garantizar que el índice corresponde a los documentos actuales.
 
@@ -152,7 +152,7 @@ python -m venv .venv
 .venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
 copy .env.example .env        # y escribo mi clave en GOOGLE_API_KEY=
-python scripts/build_index.py # crea storage/chroma (75 embeddings, unos segundos)
+python scripts/build_index.py # crea storage/chroma (83 embeddings, unos segundos)
 ```
 
 En macOS/Linux: `source .venv/bin/activate` y `cp .env.example .env`.
@@ -183,7 +183,9 @@ Ejecutados y documentados en la sección 11 del notebook:
 
 ## 11. Limitaciones
 
-- El catálogo tiene 70 alimentos y el recetario 28 recetas: MILO no conoce cualquier ingrediente.
+- El catálogo tiene 121 alimentos y el recetario 36 recetas: MILO no conoce cualquier ingrediente.
+- USDA no publica merluza como tal: uso *Fish, whiting, mixed species, raw* (incluye *Merluccius productus*) y lo indico
+  en el nombre del alimento.
 - Los macros son estimaciones con alimentos de referencia USDA (sin pérdidas de cocción ni marcas concretas). La fibra
   aparece "sin dato" cuando algún ingrediente no la publica: no la invento como cero.
 - El menú semanal escala recetas con un factor uniforme (entre ×0,5 y ×2,5); no es un optimizador ni una dieta clínica.

@@ -1621,5 +1621,484 @@
       "Pesos de porción comestible; sin conversión automática crudo/cocinado.",
       "Nutrición estimada por suma de ingredientes, sin retención ni rendimiento de cocción."
     ]
+  },
+  {
+    "recipe_id": "r029",
+    "title": "Pescadilla al horno con judías verdes y patata",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "Pescadilla o merluza (whiting, especies mixtas), cruda",
+        "food_id": "fdc_173713",
+        "grams": "180",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Patata russet sin piel, cruda",
+        "food_id": "fdc_2346401",
+        "grams": "180",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Judía verde, cruda",
+        "food_id": "fdc_2346400",
+        "grams": "150",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Aceite de oliva para ensalada o cocina (genérico USDA SR)",
+        "food_id": "fdc_171413",
+        "grams": "10",
+        "unit": "g",
+        "state": "ready_to_eat",
+        "notes": ""
+      }
+    ],
+    "steps": [
+      "Precalentar el horno a 200 °C. Pelar la patata y cortarla en rodajas finas; despuntar las judías verdes.",
+      "Hornear la patata con la mitad del aceite unos 20 minutos.",
+      "Añadir las judías y el pescado con el resto del aceite y hornear hasta que el centro del pescado alcance 63 °C.",
+      "Servir todo como una ración."
+    ],
+    "time_minutes_estimate": 35,
+    "difficulty": "media",
+    "tags": [
+      "comida",
+      "cena"
+    ],
+    "allergens": [
+      "fish"
+    ],
+    "review_status": "verified",
+    "notes": [
+      "Receta propia de MILO para el proyecto, no receta oficial USDA.",
+      "Pesos de porción comestible; sin conversión automática crudo/cocinado.",
+      "Nutrición estimada por suma de ingredientes, sin retención ni rendimiento de cocción."
+    ]
+  },
+  {
+    "recipe_id": "r030",
+    "title": "Lomo de cerdo con pimientos y cuscús",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "Lomo de cerdo deshuesado, crudo",
+        "food_id": "fdc_2646168",
+        "grams": "150",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Cuscús, seco",
+        "food_id": "fdc_169699",
+        "grams": "70",
+        "unit": "g",
+        "state": "dry",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Pimiento verde, crudo",
+        "food_id": "fdc_2258588",
+        "grams": "80",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Pimiento rojo, crudo",
+        "food_id": "fdc_2258590",
+        "grams": "80",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Aceite de oliva para ensalada o cocina (genérico USDA SR)",
+        "food_id": "fdc_171413",
+        "grams": "8",
+        "unit": "g",
+        "state": "ready_to_eat",
+        "notes": ""
+      }
+    ],
+    "steps": [
+      "Hidratar el cuscús pesado en seco con agua hirviendo según el envase y separar los granos con un tenedor.",
+      "Cortar los pimientos en tiras y saltearlos con parte del aceite.",
+      "Cocinar el lomo en filetes con el resto del aceite hasta 63 °C en el centro y dejar reposar 3 minutos.",
+      "Servir el lomo con los pimientos y el cuscús."
+    ],
+    "time_minutes_estimate": 25,
+    "difficulty": "fácil",
+    "tags": [
+      "comida",
+      "cena"
+    ],
+    "allergens": [
+      "gluten",
+      "wheat"
+    ],
+    "review_status": "verified",
+    "notes": [
+      "Receta propia de MILO para el proyecto, no receta oficial USDA.",
+      "Pesos de porción comestible; sin conversión automática crudo/cocinado.",
+      "Nutrición estimada por suma de ingredientes, sin retención ni rendimiento de cocción."
+    ]
+  },
+  {
+    "recipe_id": "r031",
+    "title": "Ensalada caprese con rúcula",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "Queso mozzarella de leche entera",
+        "food_id": "fdc_170845",
+        "grams": "125",
+        "unit": "g",
+        "state": "ready_to_eat",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Tomate roma, crudo",
+        "food_id": "fdc_1999634",
+        "grams": "200",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Rúcula baby, cruda",
+        "food_id": "fdc_2710822",
+        "grams": "40",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Aceite de oliva para ensalada o cocina (genérico USDA SR)",
+        "food_id": "fdc_171413",
+        "grams": "10",
+        "unit": "g",
+        "state": "ready_to_eat",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Orégano seco",
+        "food_id": "fdc_171328",
+        "grams": "1",
+        "unit": "g",
+        "state": "ready_to_eat",
+        "notes": ""
+      }
+    ],
+    "steps": [
+      "Lavar el tomate y la rúcula. Cortar el tomate y la mozzarella en rodajas.",
+      "Alternar tomate y mozzarella sobre la rúcula.",
+      "Aliñar con el aceite medido y el orégano."
+    ],
+    "time_minutes_estimate": 10,
+    "difficulty": "fácil",
+    "tags": [
+      "cena"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "review_status": "verified",
+    "notes": [
+      "Receta propia de MILO para el proyecto, no receta oficial USDA.",
+      "Pesos de porción comestible; sin conversión automática crudo/cocinado.",
+      "Nutrición estimada por suma de ingredientes, sin retención ni rendimiento de cocción."
+    ]
+  },
+  {
+    "recipe_id": "r032",
+    "title": "Tostada integral con sardinas y tomate",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "Pan comercial 100% integral de trigo",
+        "food_id": "fdc_2758994",
+        "grams": "70",
+        "unit": "g",
+        "state": "ready_to_eat",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Sardinas en aceite en conserva, escurridas (con espina)",
+        "food_id": "fdc_175139",
+        "grams": "85",
+        "unit": "g",
+        "state": "drained",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Tomate roma, crudo",
+        "food_id": "fdc_1999634",
+        "grams": "80",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      }
+    ],
+    "steps": [
+      "Tostar el pan pesado.",
+      "Rallar el tomate y repartirlo sobre el pan.",
+      "Escurrir las sardinas en conserva, pesar los sólidos y colocarlas encima."
+    ],
+    "time_minutes_estimate": 5,
+    "difficulty": "fácil",
+    "tags": [
+      "desayuno",
+      "cena"
+    ],
+    "allergens": [
+      "fish",
+      "gluten",
+      "wheat"
+    ],
+    "review_status": "verified",
+    "notes": [
+      "Receta propia de MILO para el proyecto, no receta oficial USDA.",
+      "Pesos de porción comestible; sin conversión automática crudo/cocinado.",
+      "Nutrición estimada por suma de ingredientes, sin retención ni rendimiento de cocción."
+    ]
+  },
+  {
+    "recipe_id": "r033",
+    "title": "Garbanzos con espinacas",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "Garbanzos cocidos, sin sal",
+        "food_id": "fdc_173757",
+        "grams": "220",
+        "unit": "g",
+        "state": "cooked",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Espinaca baby, cruda",
+        "food_id": "fdc_1999632",
+        "grams": "120",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Ajo, crudo",
+        "food_id": "fdc_1104647",
+        "grams": "5",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Pimentón",
+        "food_id": "fdc_171329",
+        "grams": "2",
+        "unit": "g",
+        "state": "ready_to_eat",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Aceite de oliva para ensalada o cocina (genérico USDA SR)",
+        "food_id": "fdc_171413",
+        "grams": "10",
+        "unit": "g",
+        "state": "ready_to_eat",
+        "notes": ""
+      }
+    ],
+    "steps": [
+      "Usar garbanzos ya cocidos sin sal y pesarlos escurridos.",
+      "Dorar el ajo laminado en el aceite medido, apartar del fuego y añadir el pimentón para que no se queme.",
+      "Añadir las espinacas lavadas hasta que pierdan volumen, incorporar los garbanzos y calentar.",
+      "Servir caliente."
+    ],
+    "time_minutes_estimate": 15,
+    "difficulty": "fácil",
+    "tags": [
+      "comida",
+      "cena"
+    ],
+    "allergens": [],
+    "review_status": "verified",
+    "notes": [
+      "Receta propia de MILO para el proyecto, no receta oficial USDA.",
+      "Pesos de porción comestible; sin conversión automática crudo/cocinado.",
+      "Nutrición estimada por suma de ingredientes, sin retención ni rendimiento de cocción."
+    ]
+  },
+  {
+    "recipe_id": "r034",
+    "title": "Requesón con pera, nueces y miel",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "Requesón (ricotta) de leche entera",
+        "food_id": "fdc_746766",
+        "grams": "150",
+        "unit": "g",
+        "state": "ready_to_eat",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Pera, cruda",
+        "food_id": "fdc_746773",
+        "grams": "150",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Nuez inglesa sin cáscara, cruda",
+        "food_id": "fdc_2346394",
+        "grams": "15",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Miel",
+        "food_id": "fdc_169640",
+        "grams": "10",
+        "unit": "g",
+        "state": "ready_to_eat",
+        "notes": ""
+      }
+    ],
+    "steps": [
+      "Lavar la pera y cortarla en dados, sin retirar la piel.",
+      "Servir el requesón con la pera, las nueces troceadas y la miel por encima."
+    ],
+    "time_minutes_estimate": 5,
+    "difficulty": "fácil",
+    "tags": [
+      "desayuno",
+      "snack"
+    ],
+    "allergens": [
+      "milk",
+      "tree_nuts"
+    ],
+    "review_status": "verified",
+    "notes": [
+      "Receta propia de MILO para el proyecto, no receta oficial USDA.",
+      "Pesos de porción comestible; sin conversión automática crudo/cocinado.",
+      "Nutrición estimada por suma de ingredientes, sin retención ni rendimiento de cocción."
+    ]
+  },
+  {
+    "recipe_id": "r035",
+    "title": "Yogur griego con mango y chía",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "Yogur griego natural de leche entera",
+        "food_id": "fdc_2259794",
+        "grams": "170",
+        "unit": "g",
+        "state": "ready_to_eat",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Mango, crudo",
+        "food_id": "fdc_169910",
+        "grams": "120",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Semillas de chía, crudas",
+        "food_id": "fdc_2710819",
+        "grams": "10",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      }
+    ],
+    "steps": [
+      "Pelar el mango, pesar la pulpa y cortarla en dados.",
+      "Servir el yogur con el mango y las semillas de chía por encima."
+    ],
+    "time_minutes_estimate": 5,
+    "difficulty": "fácil",
+    "tags": [
+      "desayuno",
+      "snack"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "review_status": "verified",
+    "notes": [
+      "Receta propia de MILO para el proyecto, no receta oficial USDA.",
+      "Pesos de porción comestible; sin conversión automática crudo/cocinado.",
+      "Nutrición estimada por suma de ingredientes, sin retención ni rendimiento de cocción."
+    ]
+  },
+  {
+    "recipe_id": "r036",
+    "title": "Crema de calabaza y puerro",
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredient_name": "Calabaza butternut, cruda",
+        "food_id": "fdc_2685570",
+        "grams": "300",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Puerro, crudo",
+        "food_id": "fdc_169246",
+        "grams": "100",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Patata russet sin piel, cruda",
+        "food_id": "fdc_2346401",
+        "grams": "100",
+        "unit": "g",
+        "state": "raw",
+        "notes": ""
+      },
+      {
+        "ingredient_name": "Aceite de oliva para ensalada o cocina (genérico USDA SR)",
+        "food_id": "fdc_171413",
+        "grams": "10",
+        "unit": "g",
+        "state": "ready_to_eat",
+        "notes": ""
+      }
+    ],
+    "steps": [
+      "Pelar la calabaza y la patata y trocearlas. Limpiar el puerro y cortarlo en rodajas.",
+      "Rehogar el puerro con el aceite medido, añadir la calabaza, la patata y agua hasta cubrir.",
+      "Cocer unos 20 minutos hasta que todo esté tierno y triturar. El agua no añade energía al cálculo."
+    ],
+    "time_minutes_estimate": 30,
+    "difficulty": "fácil",
+    "tags": [
+      "cena"
+    ],
+    "allergens": [],
+    "review_status": "verified",
+    "notes": [
+      "Receta propia de MILO para el proyecto, no receta oficial USDA.",
+      "Pesos de porción comestible; sin conversión automática crudo/cocinado.",
+      "Nutrición estimada por suma de ingredientes, sin retención ni rendimiento de cocción."
+    ]
   }
 ]

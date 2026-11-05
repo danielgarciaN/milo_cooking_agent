@@ -7,7 +7,7 @@ Actualizado el 06/11/2026. Solo marco ✅ lo que he comprobado ejecutándolo. �
 | Requisito | Estado | Dónde se comprueba |
 |---|---|---|
 | Agente experto en un dominio (cocina y nutrición) | ✅ | README §1, notebook §1 |
-| Base vectorial con ≥ 3 documentos / ~20 páginas | ✅ | 3 documentos, 75 fragmentos (~30 páginas) · notebook §3–4 |
+| Base vectorial con ≥ 3 documentos / ~20 páginas | ✅ | 3 documentos, 83 fragmentos (~30 páginas) · notebook §3–4 |
 | Indexados en ChromaDB con Gemini Embeddings | ✅ | `gemini-embedding-001`, `storage/chroma` · notebook §5–6 |
 | Colección verificada con consultas de prueba antes del agente | ✅ | Notebook §7 (aserciones) · `tests/test_rag.py --live` |
 | Respuestas con RAG + Gemini | ✅ | Notebook §8, citas [n] marcadas con ★ |
@@ -40,9 +40,9 @@ Actualizado el 06/11/2026. Solo marco ✅ lo que he comprobado ejecutándolo. �
 | Tarea | Estado | Nota |
 |---|---|---|
 | Tres documentos revisados | ✅ | AESAN (PDF oficial), recetario y técnicas (propios, con referencias) |
-| 70 alimentos USDA verificados | ✅ | Comparación con los ZIP oficiales en `tests/test_data_pipeline.py` |
+| Catálogo ampliado a 121 alimentos USDA (antes 70) | ✅ | Comparación con los ZIP oficiales en `tests/test_data_pipeline.py` |
 | Recetas pendientes corregidas | ✅ | Las 5 pendientes usaban productos comerciales; ahora avisan de revisar la etiqueta y se bloquean si hay alergias |
-| Recetario ampliado | ✅ | 28 recetas (antes 12), todas verificadas, con tipo de comida y dificultad |
+| Recetario ampliado | ✅ | 36 recetas (antes 12), todas verificadas, con tipo de comida y dificultad |
 | Limitaciones del catálogo documentadas | ✅ | README §11 |
 
 ## C. RAG
@@ -108,3 +108,22 @@ Actualizado el 06/11/2026. Solo marco ✅ lo que he comprobado ejecutándolo. �
 | README, manual, checklist y guía de entrega | ✅ | Raíz del proyecto |
 | Presentación, guion y preguntas del profesor | ✅ | `presentacion/` |
 | Ensayar la demo | ⏳ | Tarea mía antes de la defensa |
+
+## I. Mejoras visuales, catálogo y manual
+
+| Tarea | Estado | Cómo lo he comprobado |
+|---|---|---|
+| Mascota oficial PNG transparente en `assets/` | ✅ | 1254×1254 RGBA con transparencia real; en la app, sin recuadros ni sombras |
+| Chat centrado tipo ChatGPT | ✅ | Medido en navegador: columna y caja de escritura de 820 px, alineadas |
+| Tipografía más grande (Nunito + DM Sans) | ✅ | Fuentes cargadas en el navegador; texto a 17–18 px, interlineado 1,6 |
+| Emojis sustituidos por iconos coherentes | ✅ | Material Symbols (Streamlit) y SVG de Lucide; sin emojis en la interfaz fija |
+| Estética coherente en las 4 secciones | ✅ | Capturas de Chat, Mi nevera, Plan semanal y Mi perfil |
+| Diseño en móvil | ✅ | Captura a 390 px sin desplazamiento horizontal |
+| Catálogo ampliado con datos reales | ✅ | 70 → 121 alimentos USDA; `build_catalog.py` valida cada descripción y las pruebas comparan los valores |
+| Sin duplicados y con procedencia | ✅ | 121 FDC IDs únicos; fuente, versión y nutrientes registrados por fila |
+| Alimentos españoles sin equivalente en USDA | ✅ | Merluza: uso "whiting, mixed species" (incluye *Merluccius productus*), indicado en nombre y nota |
+| Nuevas recetas verificadas | ✅ | 28 → 36, todas `verified` con `prepare_recipes.py` |
+| Índice reconstruido | ✅ | 83 fragmentos en ChromaDB |
+| Borrar una sola conversación | ✅ | `python scripts/chat.py --borrar HILO` probado: el resto de hilos se conserva |
+| Manual único y completo | ✅ | `MANUAL_DEL_PROYECTO.md` (19 capítulos, rutas y comandos comprobados) |
+| Notebook actualizado y ejecutado | ✅ | `python scripts/run_notebook.py` → 0 errores |

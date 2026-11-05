@@ -549,3 +549,157 @@ Preparación:
 2. Añadir la manzana rallada o en dados y servir con las nueces troceadas por encima.
 
 Alérgenos propios de los ingredientes: gluten, frutos secos.
+
+## r029 — Pescadilla al horno con judías verdes y patata
+
+Receta para 1 ración. Ideal para: comida, cena. Tiempo orientativo: 35 minutos. Dificultad: media. Dieta: con productos animales o de composición según marca.
+
+Ingredientes y cantidades:
+
+- Pescadilla o merluza (whiting, especies mixtas), cruda: 180 g (fdc_173713).
+- Patata russet sin piel, cruda: 180 g (fdc_2346401).
+- Judía verde, cruda: 150 g (fdc_2346400).
+- Aceite de oliva para ensalada o cocina (genérico USDA SR): 10 g (fdc_171413).
+
+Preparación:
+
+1. Precalentar el horno a 200 °C. Pelar la patata y cortarla en rodajas finas; despuntar las judías verdes.
+2. Hornear la patata con la mitad del aceite unos 20 minutos.
+3. Añadir las judías y el pescado con el resto del aceite y hornear hasta que el centro del pescado alcance 63 °C.
+4. Servir todo como una ración.
+
+Alérgenos propios de los ingredientes: pescado.
+
+## r030 — Lomo de cerdo con pimientos y cuscús
+
+Receta para 1 ración. Ideal para: comida, cena. Tiempo orientativo: 25 minutos. Dificultad: fácil. Dieta: con productos animales o de composición según marca.
+
+Ingredientes y cantidades:
+
+- Lomo de cerdo deshuesado, crudo: 150 g (fdc_2646168).
+- Cuscús, seco: 70 g (fdc_169699).
+- Pimiento verde, crudo: 80 g (fdc_2258588).
+- Pimiento rojo, crudo: 80 g (fdc_2258590).
+- Aceite de oliva para ensalada o cocina (genérico USDA SR): 8 g (fdc_171413).
+
+Preparación:
+
+1. Hidratar el cuscús pesado en seco con agua hirviendo según el envase y separar los granos con un tenedor.
+2. Cortar los pimientos en tiras y saltearlos con parte del aceite.
+3. Cocinar el lomo en filetes con el resto del aceite hasta 63 °C en el centro y dejar reposar 3 minutos.
+4. Servir el lomo con los pimientos y el cuscús.
+
+Alérgenos propios de los ingredientes: gluten, trigo.
+
+## r031 — Ensalada caprese con rúcula
+
+Receta para 1 ración. Ideal para: cena. Tiempo orientativo: 10 minutos. Dificultad: fácil. Dieta: con productos animales o de composición según marca.
+
+Ingredientes y cantidades:
+
+- Queso mozzarella de leche entera: 125 g (fdc_170845).
+- Tomate roma, crudo: 200 g (fdc_1999634).
+- Rúcula baby, cruda: 40 g (fdc_2710822).
+- Aceite de oliva para ensalada o cocina (genérico USDA SR): 10 g (fdc_171413).
+- Orégano seco: 1 g (fdc_171328).
+
+Preparación:
+
+1. Lavar el tomate y la rúcula. Cortar el tomate y la mozzarella en rodajas.
+2. Alternar tomate y mozzarella sobre la rúcula.
+3. Aliñar con el aceite medido y el orégano.
+
+Alérgenos propios de los ingredientes: leche.
+
+## r032 — Tostada integral con sardinas y tomate
+
+Receta para 1 ración. Ideal para: desayuno, cena. Tiempo orientativo: 5 minutos. Dificultad: fácil. Dieta: con productos animales o de composición según marca.
+
+Ingredientes y cantidades:
+
+- Pan comercial 100% integral de trigo: 70 g (fdc_2758994).
+- Sardinas en aceite en conserva, escurridas (con espina): 85 g (fdc_175139).
+- Tomate roma, crudo: 80 g (fdc_1999634).
+
+Preparación:
+
+1. Tostar el pan pesado.
+2. Rallar el tomate y repartirlo sobre el pan.
+3. Escurrir las sardinas en conserva, pesar los sólidos y colocarlas encima.
+
+Alérgenos propios de los ingredientes: pescado, gluten, trigo.
+
+## r033 — Garbanzos con espinacas
+
+Receta para 1 ración. Ideal para: comida, cena. Tiempo orientativo: 15 minutos. Dificultad: fácil. Dieta: vegana.
+
+Ingredientes y cantidades:
+
+- Garbanzos cocidos, sin sal: 220 g (fdc_173757).
+- Espinaca baby, cruda: 120 g (fdc_1999632).
+- Ajo, crudo: 5 g (fdc_1104647).
+- Pimentón: 2 g (fdc_171329).
+- Aceite de oliva para ensalada o cocina (genérico USDA SR): 10 g (fdc_171413).
+
+Preparación:
+
+1. Usar garbanzos ya cocidos sin sal y pesarlos escurridos.
+2. Dorar el ajo laminado en el aceite medido, apartar del fuego y añadir el pimentón para que no se queme.
+3. Añadir las espinacas lavadas hasta que pierdan volumen, incorporar los garbanzos y calentar.
+4. Servir caliente.
+
+Alérgenos propios de los ingredientes: ninguno conocido.
+
+## r034 — Requesón con pera, nueces y miel
+
+Receta para 1 ración. Ideal para: desayuno, tentempié. Tiempo orientativo: 5 minutos. Dificultad: fácil. Dieta: con productos animales o de composición según marca.
+
+Ingredientes y cantidades:
+
+- Requesón (ricotta) de leche entera: 150 g (fdc_746766).
+- Pera, cruda: 150 g (fdc_746773).
+- Nuez inglesa sin cáscara, cruda: 15 g (fdc_2346394).
+- Miel: 10 g (fdc_169640).
+
+Preparación:
+
+1. Lavar la pera y cortarla en dados, sin retirar la piel.
+2. Servir el requesón con la pera, las nueces troceadas y la miel por encima.
+
+Alérgenos propios de los ingredientes: leche, frutos secos.
+
+## r035 — Yogur griego con mango y chía
+
+Receta para 1 ración. Ideal para: desayuno, tentempié. Tiempo orientativo: 5 minutos. Dificultad: fácil. Dieta: vegetariana.
+
+Ingredientes y cantidades:
+
+- Yogur griego natural de leche entera: 170 g (fdc_2259794).
+- Mango, crudo: 120 g (fdc_169910).
+- Semillas de chía, crudas: 10 g (fdc_2710819).
+
+Preparación:
+
+1. Pelar el mango, pesar la pulpa y cortarla en dados.
+2. Servir el yogur con el mango y las semillas de chía por encima.
+
+Alérgenos propios de los ingredientes: leche.
+
+## r036 — Crema de calabaza y puerro
+
+Receta para 1 ración. Ideal para: cena. Tiempo orientativo: 30 minutos. Dificultad: fácil. Dieta: vegana.
+
+Ingredientes y cantidades:
+
+- Calabaza butternut, cruda: 300 g (fdc_2685570).
+- Puerro, crudo: 100 g (fdc_169246).
+- Patata russet sin piel, cruda: 100 g (fdc_2346401).
+- Aceite de oliva para ensalada o cocina (genérico USDA SR): 10 g (fdc_171413).
+
+Preparación:
+
+1. Pelar la calabaza y la patata y trocearlas. Limpiar el puerro y cortarlo en rodajas.
+2. Rehogar el puerro con el aceite medido, añadir la calabaza, la patata y agua hasta cubrir.
+3. Cocer unos 20 minutos hasta que todo esté tierno y triturar. El agua no añade energía al cálculo.
+
+Alérgenos propios de los ingredientes: ninguno conocido.

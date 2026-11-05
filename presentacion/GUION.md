@@ -22,7 +22,7 @@ responde con una guía oficial citándola y recuerda lo que le cuento."
 **3 · La frase central (40 s).** Leer la frase. "Todo el proyecto está organizado alrededor de esta secuencia y en el
 notebook enseño cada paso con datos reales."
 
-**4 · Documentos y chunking (50 s).** "Uso tres documentos: la guía oficial de AESAN, mi recetario de 28 recetas y una
+**4 · Documentos y chunking (50 s).** "Uso tres documentos: la guía oficial de AESAN, mi recetario de 36 recetas y una
 guía de técnicas y sustituciones. Los divido por títulos en fragmentos de hasta 400 palabras. Una decisión que aprendí
 probando: el índice del PDF salía como primer resultado de casi todo, así que quito portada, índice y contraportada."
 
@@ -48,7 +48,7 @@ notebook creo un agente nuevo y sigue recordando que soy vegetariano. Otra conve
 **10 · Demo en vivo (3 min).** Cambiar a la app. Ver el guion de la demo abajo.
 
 **11 · Calidad y límites (30 s).** "92 pruebas automáticas, 6 más con Gemini real, el notebook se ejecuta entero sin
-errores y las 28 recetas están validadas. Limitaciones: catálogo de 70 alimentos, macros estimados y depende de la API."
+errores y las 36 recetas están validadas. Limitaciones: catálogo de 121 alimentos, macros estimados y depende de la API."
 
 **12 · Gracias (10 s).**
 
@@ -70,7 +70,7 @@ semanal funcionan igualmente porque no usan IA.
 ## Preguntas probables del profesor
 
 **¿Por qué estos tres documentos?** Uno oficial (AESAN) para recomendaciones fiables, y dos propios que el asistente
-necesita para su tarea: el recetario y las técnicas/sustituciones. Suman unas 30 páginas equivalentes y 75 fragmentos.
+necesita para su tarea: el recetario y las técnicas/sustituciones. Suman unas 33 páginas equivalentes y 83 fragmentos.
 
 **¿Por qué 400 palabras y 50 de solapamiento?** Las secciones de la guía y las recetas suelen caber en un fragmento, así
 cada fragmento trata un tema completo. El solapamiento evita perder una frase cuando una sección larga se corta.
@@ -100,7 +100,7 @@ el grafo va al nodo de herramientas; si no, termina.
 **¿Por qué recuperar en cada turno aunque no haga falta?** El enunciado pide usar la base de conocimiento en cada consulta
 y así las respuestas siempre tienen contexto. Si la pregunta es muy corta añado la anterior para que la búsqueda tenga sentido.
 
-**¿Qué limitaciones tiene?** 70 alimentos y 28 recetas, macros estimados sin pérdidas de cocción, el menú escala recetas
+**¿Qué limitaciones tiene?** 121 alimentos y 36 recetas, macros estimados sin pérdidas de cocción, el menú escala recetas
 (no es un optimizador) y depende de la API de Gemini.
 
 **¿Cómo lo desplegarías?** Streamlit Community Cloud con la clave en *Secrets*. El índice de Chroma se construye solo al

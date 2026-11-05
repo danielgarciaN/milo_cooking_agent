@@ -98,7 +98,7 @@
   utilizando esa información."</p>
   <div class="pipeline" style="margin-top:5vh">
     <div class="step"><b>📄</b><div class="t">3 documentos</div><div class="d">PDF AESAN + recetario + técnicas</div></div><div class="arrow">→</div>
-    <div class="step"><b>✂️</b><div class="t">Chunking</div><div class="d">75 fragmentos</div></div><div class="arrow">→</div>
+    <div class="step"><b>✂️</b><div class="t">Chunking</div><div class="d">83 fragmentos</div></div><div class="arrow">→</div>
     <div class="step"><b>🔢</b><div class="t">Embeddings</div><div class="d">Gemini · 3072 dim</div></div><div class="arrow">→</div>
     <div class="step"><b>🗄️</b><div class="t">ChromaDB</div><div class="d">storage/chroma</div></div><div class="arrow">→</div>
     <div class="step"><b>🔎</b><div class="t">Recuperar</div><div class="d">Top 4 · coseno</div></div><div class="arrow">→</div>
@@ -109,11 +109,11 @@
 <!-- 4. Documentos y chunking -->
 <section class="slide">
   <div class="kicker">Paso 1 y 2 · Documentos y chunking</div>
-  <h2>Mis tres documentos, en 75 fragmentos</h2>
+  <h2>Mis tres documentos, en 83 fragmentos</h2>
   <table>
     <tr><th>Documento</th><th>Qué contiene</th><th class="n">Fragmentos</th><th class="n">Palabras</th></tr>
-    <tr><td><b>Guía AESAN 2022</b> (PDF, 19 págs.)</td><td>Raciones y frecuencias recomendadas, sal, agua, actividad física</td><td class="n">35</td><td class="n">4.147</td></tr>
-    <tr><td><b>Recetario de MILO</b></td><td>28 recetas en gramos, estado de cada ingrediente, pasos, alérgenos</td><td class="n">29</td><td class="n">3.725</td></tr>
+    <tr><td><b>Guía AESAN 2022</b> (PDF, 19 págs.)</td><td>Raciones y frecuencias recomendadas, sal, agua, actividad física</td><td class="n">35</td><td class="n">4.137</td></tr>
+    <tr><td><b>Recetario de MILO</b></td><td>36 recetas en gramos, estado de cada ingrediente, pasos, alérgenos</td><td class="n">37</td><td class="n">4.661</td></tr>
     <tr><td><b>Técnicas y sustituciones</b></td><td>Pesar, cocer, hornear, higiene, temperaturas seguras, sustituir</td><td class="n">11</td><td class="n">1.102</td></tr>
   </table>
   <div class="grid g3" style="margin-top:3vh">
@@ -139,7 +139,7 @@
       </table>
     </div>
     <div class="card" style="width:28vw">
-      <div class="big">75</div><p>vectores en <code>storage/chroma</code></p>
+      <div class="big">83</div><p>vectores en <code>storage/chroma</code></p>
       <div class="big">3072</div><p>dimensiones por vector</p>
       <p class="small">Solo se generan los que faltan: reindexar no duplica nada.</p>
     </div>
@@ -160,8 +160,8 @@
       <tr class="total"><td>Total por ración</td><td></td><td></td><td class="n">586</td><td class="n">42,5 g</td></tr>
     </table>
     <div class="card" style="flex:1">
-      <p><b>70 alimentos USDA</b> · valores por 100 g</p>
-      <p><b>28 recetas</b> · todas verificadas</p>
+      <p><b>121 alimentos USDA</b> · valores por 100 g (antes 70)</p>
+      <p><b>36 recetas</b> · todas verificadas</p>
       <p class="small">Crudo ≠ cocinado · un dato ausente no es 0 · dieta, alergias y "no me gusta" los filtra Python</p>
       <p class="small">El catálogo se regenera idéntico byte a byte desde los ZIP oficiales.</p>
     </div>
@@ -252,10 +252,10 @@
     <div class="card"><div class="big">92</div><p class="small">pruebas automáticas sin API</p></div>
     <div class="card"><div class="big">+6</div><p class="small">pruebas con Gemini real (RAG, citas y memoria)</p></div>
     <div class="card"><div class="big">0</div><p class="small">errores al ejecutar el notebook completo</p></div>
-    <div class="card"><div class="big">28/28</div><p class="small">recetas validadas por Python</p></div>
+    <div class="card"><div class="big">36/36</div><p class="small">recetas validadas por Python</p></div>
   </div>
   <div class="grid g2" style="margin-top:3vh">
-    <div class="card"><b>Limitaciones</b><ul class="small"><li>70 alimentos y 28 recetas</li><li>Macros estimados, sin pérdidas de cocción</li><li>Menú por escalado, no dieta clínica</li><li>Depende de la API de Gemini</li></ul></div>
+    <div class="card"><b>Limitaciones</b><ul class="small"><li>121 alimentos y 36 recetas</li><li>Macros estimados, sin pérdidas de cocción</li><li>Menú por escalado, no dieta clínica</li><li>Depende de la API de Gemini</li></ul></div>
     <div class="card"><b>Mejoras</b><ul class="small"><li>Más alimentos y recetas</li><li>Búsqueda híbrida (palabras + vectores)</li><li>Evaluación del RAG con preguntas de referencia</li><li>Recetas propias del usuario</li></ul></div>
   </div>
 </section>
