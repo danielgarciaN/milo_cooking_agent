@@ -59,11 +59,3 @@ Pasos (necesitan mi cuenta de GitHub y de Streamlit):
 
 Nota: en Streamlit Cloud la memoria (`storage/memoria.sqlite`) dura mientras la app esté encendida; si la plataforma
 la reinicia, las conversaciones empiezan de nuevo. En local la memoria es permanente.
-
-## 5. Qué presentar oralmente (5–10 min)
-
-1. El problema y qué hace MILO (1 min).
-2. La frase central y el RAG paso a paso: documentos → chunking → embeddings → ChromaDB → fragmentos → Gemini (3 min).
-3. Decisiones técnicas: Python hace las cuentas, grafo LangGraph, system prompt iterado, memoria SQLite (2 min).
-4. Demo en vivo en Streamlit (3 min).
-5. Verificación, limitaciones y mejoras (1 min).
